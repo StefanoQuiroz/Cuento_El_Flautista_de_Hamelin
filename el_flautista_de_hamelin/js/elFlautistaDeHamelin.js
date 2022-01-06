@@ -5,19 +5,15 @@ let JSON_CUENTO = {
     descripcion:
       '“El flautista de Hamelin” Narra la historia de un pueblo que se encuentra atestado de ratas, razón que desespera a todos sus habitantes. Un día aparece un joven que ofrece solucionar de una vez por todas la gran plaga de Hamelin, pero a cambio exige cierta compensación por su trabajo, el pueblo acepta, y el flautista con tres tonadas de su instrumento logra que todas las ratas se marchen del pueblo. El problema surge cuando el tacaño alcalde de Hamelin se reúsa pagar al joven la suma que le correspondía. Ahí es cuando el flautista decide tomar justicia por sus manos y reclamar la suma hipnotizando a los niños del pueblo y llevándolos hacia una cueva mágica, hasta recibir el pago prometido. Este relato es una adaptación libre basada en una leyenda popular alemana, atribuida a los hermanos Grimm en 1816. La leyenda registra un suceso oscuro, ocurrido en Alemania en 1284, donde se secuestraron a niños en el pueblo de Hamelin. La principal fuente que patenta este relato oral se encuentra en el vitral de la iglesia de Hamelin elaborado en el 1300 d.c. ',
     creditos: [
-      ['Adaptación:', 'Copec'],
-      ['Ilustraciones:', 'Copec'],
-      ['Narración:', 'Nicole Castillo Ramírez'],
-      ['Arreglos musicales:', 'Copec y Entrelíneas'],
+      ['Autora:', ''],
+      ['Ilustraciones:', ''],
+      ['Narración:', ''],
+      ['Arreglos musicales:', ''],
       [
-        'Edición a cargo de:',
-        'Copec',
+        "Edición a cargo de:","Constanza Ried Silva<br>Verónica Vives Cofré<br>Fundación Entrelíneas"
       ],
       ['Montaje y desarrollo web:', 'Agencia Match'],
-      [
-        'Créditos de sonidos:',
-        "Revise detalles <a href='#' target='_blank'>aquí</a>",
-      ],
+      ['Créditos de sonidos:', ""]
     ],
     ID: 0,
     imagenes: [
