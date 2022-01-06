@@ -1,0 +1,4405 @@
+.creditos .imagen_portada,
+#final_cuento .creditos .imagen_portada{
+    display: grid;
+    background-image: url("../img/elFlautistaDeHamelin/04.jpg");
+    background-size: cover;
+    background-position: 75%;
+    background-repeat: no-repeat;    
+/*    background-color: #fff;*/
+}
+
+.title h2{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#escena_00 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_0_fondo.jpg");
+    background-size: cover;
+    /* el de abajo -1% y lo manda a la derecha 100% lo manda a la izquierda */
+    background-position: 50%;
+    background-repeat: no-repeat;   
+}
+
+
+
+/*Posicionamiento de sprites*/
+
+/************ESCE00***********/
+
+#escena_00 .techitoEsc00{
+    width: 385px;
+    height: 800px;
+    position: absolute;
+    z-index: 2;
+    top: 48%;
+    left: -9%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteTechito_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/techito.png");   
+}
+
+
+#escena_00 .ventanaApoyoEsc00{
+    width: 2550px;
+    height: 6000px;
+    position: absolute;
+    z-index: 2;
+    top: -16.9%;
+    left: -17%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteVentanaApoyo_esc00 { 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/ventana.01.png");   
+}
+
+
+#escena_00 .rata1CabezaEsc00{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 47%;
+    left: -3%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata1Cabeza_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata1_cabeza.png");   
+}
+
+
+#escena_00 .rata1OjoEsc00{
+    width: 37px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 53%;
+    left: 0%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteRata1Ojo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata1_ojo.png");   
+}
+
+
+#escena_00 .rata1CuerpoEsc00{
+    width: 155px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 58%;
+    left: -4%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata1Cuerpo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata1_cuerpo.png");   
+}
+
+
+#escena_00 .rata1ColaEsc00{
+    width: 120px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: -1.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata1Cola_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata1_cola.png");   
+}
+
+
+
+#escena_00 .rata2Esc00{
+    width: 310px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 4%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata2_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion//rata2_cuerpo.png");   
+}
+
+
+#escena_00 .rata2ColaEsc00{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 89%;
+    left: 14%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+   
+
+}
+
+.spriteRata2Cola_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata2_cola.png");   
+}
+ 
+
+
+#escena_00 .rata3CabezaEsc00{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 32%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata3Cabeza_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cabeza.png");   
+}
+
+
+#escena_00 .rata3CabezaEsc00{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 78%;
+    left: 30%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata3Cabeza_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cabeza.png");   
+}
+
+#escena_00 .rata3OjoEsc00{
+    width: 46px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 83%;
+    left: 33.7%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+    
+}
+
+.spriteRata3Ojo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_ojos.png");   
+}
+
+
+#escena_00 .rata3CuerpoEsc00{
+    width: 170px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 88%;
+    left: 28%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata3Cuerpo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cuerpo.png");   
+}
+
+
+#escena_00 .rata3ColaEsc00{
+    width: 105px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 88%;
+    left: 25%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteRata3Cola_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata2_cola.png");   
+}
+ 
+
+#escena_00 .rata4CabezaEsc00{
+    width: 210px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 83%;
+    left: 44%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata4Cabeza_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata4_cabeza.png");   
+}
+
+#escena_00 .rata4CuerpoEsc00{
+    width: 170px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 92%;
+    left: 50%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata4Cuerpo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata4_cuerpo.png");   
+}
+
+
+#escena_00 .rata4OjoEsc00{
+    width: 46px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 89%;
+    left: 49%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+    
+}
+
+.spriteRata4Ojo_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata4_ojos.png");   
+}
+
+
+#escena_00 .rata4ColaEsc00{
+    width: 120px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    left: 56%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    transform: scaleY(-1);
+     
+}
+
+.spriteRata4Cola_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata1_cola.png");   
+}
+
+
+#escena_00 .sillonEsc00{
+    width: 530px;
+    height: 700px;
+    position: absolute;
+    z-index: 0;
+    top: 2%;
+    left: 74.5%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteSillon_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/sillon.png");   
+}
+
+#escena_00 .diarioEsc00{
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 59%;
+    left: 20%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteDiario_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/diario.png");   
+}
+
+#escena_00 .ciudadanoEsc00{
+    width: 215px;
+    height: 700px;
+    position: absolute;
+    z-index: 0;
+    top: 48%;
+    left: 24%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteCiudadano_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/ciudadano.png");   
+}
+
+
+#escena_00 .fruteraEsc00{
+    width: 160px;
+    height: 700px;
+    position: absolute;
+    z-index: 0;
+    top: 52%;
+    left: 39.2%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteFrutera_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/frutera.png");   
+}
+
+
+#escena_00 .mujerEsc00{
+    width: 120px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 53%;
+    left: 5%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMujer_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/mujer.png");   
+}
+
+#escena_00 .turbanteEsc00{
+    width: 215px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 57%;
+    left: -8%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteTurbante_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/animacion/turbante.png");   
+}
+
+
+#escena_00 .ratonEsc00{
+    width: 110px;
+    height: 700px;
+    position: absolute;
+    z-index: 0;
+    top: 70%;
+    left: 66%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRaton_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/raton.png");   
+}
+
+
+
+
+/************ESCE01***********/
+
+/* RATA 1 */
+
+#escena_01 .rata1CuerpoEsc01{
+    width: 240px;
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+    top: 51%;
+    left: -3%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata1Cuerpo_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/rata1_cuerpo.png");   
+}
+
+
+#escena_01 .rata1OjoEsc01{
+    width: 34px;
+    height: 100px;
+    position: absolute;
+    z-index: 4;
+    top: 64%;
+    left: 4.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0; 
+}
+
+.spriteRata1Ojo_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/rata1_ojo.png");   
+}
+
+
+#escena_01 .rata1ColaEsc01{
+    width: 120px;
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 4%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata1Cola_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/rata1_cola.png");   
+}
+
+/* RATA 2 */
+
+#escena_01 .rata2CuerpoEsc01{
+    width: 260px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: -6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata2Cuerpo_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/rata2_cuerpo.png");   
+}
+
+
+#escena_01 .rata2OjoEsc01{
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+    top: 42%;
+    left: 2.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteRata2Ojo_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/rata2_ojo.png");   
+}
+
+
+#escena_01 .rata2ColaEsc01{
+    width: 120px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: -1.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata2Cola_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/");   
+}
+
+/* CIUDADANOS */
+
+#escena_01 .pinochoEsc01{
+    width: 220px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 28%;
+    left: 28%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spritePinocho_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/pinocho.png");   
+}
+
+#escena_01 .monjaEsc01{
+    width: 190px;
+    height: 520px;
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 38%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMonja_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/monja.png");   
+}
+
+#escena_01 .pintorEsc01{
+    width: 210px;
+    height: 520px;
+    position: absolute;
+    z-index: 2;
+    top: 47%;
+    left: 26.5%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spritePintor_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/pintor.png");   
+}
+
+#escena_01 .cerditosEsc01{
+    width: 280px;
+    height: 520px;
+    position: absolute;
+    z-index: 2;
+    top: 71%;
+    left: 17.4%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteCerditos_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/chanchitos.png");   
+}
+
+#escena_01 .resadoraEsc01{
+    width: 155px;
+    height: 520px;
+    position: absolute;
+    z-index: 2;
+    top: 74.2%;
+    left: 29%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteResadora_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/resadora.png");   
+}
+
+
+#escena_01 .rubiaEsc01{
+    width: 170px;
+    height: 530px;
+    position: absolute;
+    z-index: 3;
+    top: 81.3%;
+    left: 37%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRubia_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/rubia.png");   
+}
+
+
+#escena_01 .enojadaEsc01{
+    width: 180px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 34%;
+    left: 51%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteEnojada_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/enojada.png");   
+}
+
+#escena_01 .rojoEsc01{
+    width: 220px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 58%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRojo_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/rojo.png");   
+}
+
+
+#escena_01 .rubioEsc01{
+    width: 100px;
+    height: 530px;
+    position: absolute;
+    z-index: 1;
+    top: 71%;
+    left: 34.5%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRubio_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/rubio.png");   
+}
+
+#escena_01 .cabelloNegroEsc01{
+    width: 134px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 59%;
+    left: 38%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteCabelloNegro_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/negro.png");   
+}
+
+#escena_01 .azulEsc01{
+    width: 160px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 66%;
+    left: 45%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteAzul_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/azul.png");   
+}
+
+#escena_01 .chicoAzulEsc01{
+    width: 85px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 77%;
+    left: 53%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteChicoAzul_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/celeste.png");   
+}
+
+#escena_01 .alcaldeEsc01{
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 52%;
+    left: 64%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcalde_esc01{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/alcalde.png");   
+}
+
+/* BOCADOS */
+
+#escena_01 .bocado1Esc01{
+    width: 250px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    left: 48%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteBocado1{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado1.png");   
+}
+
+#escena_01 .bocado2Esc01{
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 16%;
+    left: 52%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteBocado2{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado2.png");   
+}
+
+#escena_01 .bocado3Esc01{
+    width: 280px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 51%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0; 
+}
+
+.spriteBocado3{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado3.png");   
+}
+
+
+#escena_01 .bocado4Esc01{
+    width: 250px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 22%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteBocado4{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado1.png");   
+}
+
+#escena_01 .bocado5Esc01{
+    width: 300px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 29%;
+    left: 27%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteBocado5{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado2.png");   
+}
+
+#escena_01 .bocado6Esc01{
+    width: 280px;
+    height: 530px;
+    position: absolute;
+    z-index: 2;
+    top: 28%;
+    left: 29%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteBocado6{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena02/animacion/bocado3.png");   
+}
+
+
+
+/************ESCE02***********/
+
+#escena_02 .alcaldeEsc02{
+    width: 280px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 47%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcalde_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/alcalde.png");   
+}
+
+#escena_02 .ninoEsc02{
+    width: 215px;
+    height: 234px;
+    position: absolute;
+    z-index: 1;
+    top: 78.2%;
+    left: 2%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteNino_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/nino.png");   
+}
+
+#escena_02 .monjaEsc02{
+    width: 230px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 74.5%;
+    left: 14.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMonja_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/monja_cuerpo.png");   
+}
+
+#escena_02 .mujerCafeEsc02{
+    width: 220px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 81.5%;
+    left: 69.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMujerCafe_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/cafe.png");   
+}
+
+#escena_02 .mujerRojoEsc02{
+    width: 230px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 68.5%;
+    left: 80.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMujerRojo_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/roja.png");   
+}
+
+#escena_02 .mujerVerdeEsc02{
+    width: 241px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 68%;
+    left: 57.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteMujerVerde_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/verde.png");   
+}
+
+#escena_02 .ratonesEsc02{
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 40.5%;
+    left: 71.7%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRatones_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/ratones2.png");   
+}
+
+#escena_02 .ratonCafeEsc02{
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 67.9%;
+    left: 1.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRatonCafe_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/raton3.png");   
+}
+
+#escena_02 .ratonNegroEsc02{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+    top: 42.7%;
+    left: 0.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRatonNegro_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/raton4.png");   
+}
+
+#escena_02 .flautistaOjosCerradosDerEsc02{
+    width: 131px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: 30.5%;
+    left: 44.6%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteFlautistaOjosCerradosDer_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/flautista_ojos.png");   
+}
+
+#escena_02 .flautistaOjosCerradosIzqEsc02{
+    width: 131px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: 30.5%;
+    left: 36.7%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteFlautistaOjosCerradosIzq_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/flautista_ojos.png");   
+}
+
+/* SPRINTS UNITARIOS */
+
+#escena_02 .bocadoEsc02{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    top: -0.3%;
+    left: 54.9%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity:0;
+}
+
+.spriteBocado_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/bocado.png");   
+}
+
+#escena_02 .bocadoOroEsc02{
+    width: 204px;
+    height: 250px;
+    position: absolute;
+    z-index: 10;
+    top: 4.5%;
+    left: 60.1%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity:0;
+}
+
+.spriteBocadoOro_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/oro.png");   
+}
+
+#escena_02 .bocadoRataEsc02{
+    width: 290px;
+    height: 250px;
+    position: absolute;
+    z-index: 10;
+    top: 4.5%;
+    left: 57.9%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity:0;
+}
+
+.spriteBocadoRata_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/rata.png");   
+}
+
+#escena_02 .flautistaEsc02{
+    width: 560px;
+    height: 1040px;
+    position: absolute;
+    z-index: 3;
+    top: 4.5%;
+    left: 27.3%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautista_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/flautista_cuerpo.png");   
+}
+
+#escena_02 .flautistaBrazoDerEsc02{
+    width: 340px;
+    height: 350px;
+    position: absolute;
+    z-index: 2;
+    top: 57.5%;
+    left: 20.9%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautistaBrazoDer_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/flautista_brazo_der.png");   
+}
+
+#escena_02 .flautistaBrazoIzqEsc02{
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+    top: 41.1%;
+    left: 46.3%;
+
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity:1;
+}
+
+.spriteFlautistaBrazoIzq_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/flautista_brazo_izq.png");   
+}
+
+#escena_02 .flautistaBocaEsc02{
+    width: 126px;
+    height: 77px;
+    position: absolute;
+    z-index: 1;
+    top: 36.5%;
+    left: 39.55%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity:0;
+}
+
+.spriteFlautistaBoca_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/flautista_boca.png");   
+}
+
+
+#escena_02 .plumaFlautista{
+    width: 256px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 21.4%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spritePlumaFlautista{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/flautista_pluma.png");   
+}
+
+
+
+
+#escena_02 .parcheEsc02{
+    width: 418px;
+    height: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: 2.8%;
+    left: 79.6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteParche_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/parcheTejado.png");   
+}
+
+
+
+#escena_02 .nube1Esc02{
+    width: 475px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 3.8%;
+    left: 1%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube1_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/nube1.png");   
+}
+
+#escena_02 .nube2Esc02{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 2.8%;
+    left: 61.6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube2_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/nube2.png");   
+}
+
+#escena_02 .nube2Esc02{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 2.8%;
+    left: 61.6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube2_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/nube2.png");   
+}
+
+#escena_02 .ratonTejadoCafeEsc02{
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 55.9%;
+    left: 20.4%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRatonTejadoCafe_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/raton3.png");   
+}
+
+#escena_02 .ratonTejadoNegroEsc02{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+    top: 57.7%;
+    left: 15.3%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRatonTejadoNegro_esc02{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/animacion/raton4.png");   
+}
+
+
+/************ESCE03***********/
+
+/* #escena_03 #Capa_2{
+    opacity:1;
+} */
+
+/* #escena_03 .interact #Nota_1{
+    top: 44.5%;
+    left: 58.3%;
+    width: 85px;
+    height: 150px;
+    opacity:1;
+}  */
+
+#escena_03 .nota1Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota2Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota3Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+#escena_03 .nota4Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota5Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota6Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+#escena_03 .nota7Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota8Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota9Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+#escena_03 .nota10Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota11Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota12Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+#escena_03 .nota13Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota14Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota15Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+#escena_03 .nota16Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota17Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota18Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+#escena_03 .nota19Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_03 .nota20Esc03{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota21Esc03{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+
+#escena_03 .flautistaEsc03{
+    width: 352px;
+    height: 500px;
+    position: absolute;
+    z-index: 0;
+    top: 33.7%;
+    left: 49.3%;
+    opacity: 1;
+    background-position: -600% 0%;
+    background-size: 600%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautista_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/flautista.png");   
+}
+
+
+
+
+
+
+
+
+/* #escena_03 .nota2Esc03{
+    width: 73px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 45.9%;
+    left: 58.3%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_03 .nota3Esc03{
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 45.5%;
+    left: 58.7%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+} */
+
+/* RATAS CHAPUZÓN */
+
+#escena_03 .rataCafe01Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 2;
+    top: 39.5%;
+    left: 3%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe02Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 2;
+    top: 39.5%;
+    left: 15%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe03Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 2;
+    top: 45.5%;
+    left: 0%;
+    opacity: 0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe04Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 37.5%;
+    left: 31%;
+    opacity: 0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe05Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 37.5%;
+    left: 40%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe06Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 50.5%;
+    left: -9%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataCafe07Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 59.5%;
+    left: -9%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafe_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe.png");   
+}
+
+#escena_03 .rataNegra01Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 0;
+    top: 39.5%;
+    left: 7%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra02Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 0;
+    top: 37.5%;
+    left: 24%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra03Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 2;
+    top: 38.5%;
+    left: 11%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra04Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 0;
+    top: 68.5%;
+    left: -8%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra05Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 0;
+    top: 79.5%;
+    left: -8%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra06Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 37.5%;
+    left: 36.5%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+#escena_03 .rataNegra07Esc03{
+    width: 163px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 39.5%;
+    left: -1%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegra_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra.png");   
+}
+
+/* Ratas Cafe Flotador*/
+
+#escena_03 .rataCafeFlotador01Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 73.5%;
+    left: 59%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafeFlotador_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe_cae.png");   
+}
+
+#escena_03 .rataCafeSplash01Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80.5%;
+    left: 73%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafeSplash_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/splash.png");   
+}
+
+#escena_03 .rataCafeMuerte01Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 87.5%;
+    left: 79%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataCafeMuerta_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_cafe_ahogada.png");   
+}
+
+#escena_03 .rataCafeFlotador02Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 63%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash02Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 77%;
+    left: 76%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte02Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 87.5%;
+    left: 80%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeFlotador03Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 76%;
+    left: 55%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash03Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 84%;
+    left: 72%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte03Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 93%;
+    left: 77%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeFlotador04Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 68%;
+    left: 65%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash04Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 79%;
+    left: 76.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte04Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 81%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeFlotador05Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 69%;
+    left: 64%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash05Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 73%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte05Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 91%;
+    left: 77%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeFlotador06Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 48.5%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash06Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 85.5%;
+    left: 67.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte06Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: 71%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeFlotador07Esc03{
+    width: 118px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 48.5%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeSplash07Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 81.5%;
+    left: 77%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataCafeMuerte07Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 92%;
+    left: 81%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+/* Ratas Negra Snorkel */
+#escena_03 .rataNegraSnorkel01Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 73.5%;
+    left: 59%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraSnorkel_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra_cae.png");   
+}
+
+#escena_03 .rataNegraSplash01Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 82.5%;
+    left: 79%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraSplash_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/splash.png");   
+}
+
+#escena_03 .rataNegraMuerte01Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 90.5%;
+    left: 83%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraMuerta_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra_ahogada.png");   
+}
+
+#escena_03 .rataNegraSnorkel02Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 70.5%;
+    left: 66%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraSnorkel_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra_cae.png");   
+}
+
+#escena_03 .rataNegraSplash02Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80.5%;
+    left: 79%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraSplash_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/splash.png");   
+}
+
+#escena_03 .rataNegraMuerte02Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 88.5%;
+    left: 84%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRataNegraMuerta_esc03{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/animacion/rata_negra_ahogada.png");   
+}
+
+#escena_03 .rataNegraSnorkel03Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 77.5%;
+    left: 58%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSplash03Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 84.5%;
+    left: 68%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraMuerte03Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 91.5%;
+    left: 72%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSnorkel04Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80.5%;
+    left: 54%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSplash04Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 84.5%;
+    left: 79%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraMuerte04Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 91.5%;
+    left: 84%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSnorkel05Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 71.5%;
+    left: 64%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSplash05Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 69%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraMuerte05Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 94%;
+    left: 72.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSnorkel06Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 72%;
+    left: 64%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSplash06Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 80.5%;
+    left: 80%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraMuerte06Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 84%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSnorkel07Esc03{
+    width: 185px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 81%;
+    left: 53%;
+    opacity:0;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraSplash07Esc03{
+    width: 275px;
+    height: 190px;
+    position: absolute;
+    z-index: 1;
+    top: 82.5%;
+    left: 83%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_03 .rataNegraMuerte07Esc03{
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 92.5%;
+    left: 87%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+/************ESCE04***********/
+
+#escena_04 .nube1{
+    width: 650px;
+    height: 800px;
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: -2%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube1{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/nube1.png");   
+} 
+
+
+#escena_04 .nube2{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    z-index: 1;
+    top: 16%;
+    left: 69%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube2{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/nube2.png");   
+} 
+
+
+#escena_04 .sol{
+    width: 230px;
+    height: 800px;
+    position: absolute;
+    z-index: 0;
+    top: 2%;
+    left: 76%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteSol{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/sol.png");   
+} 
+
+
+#escena_04 .rayosDeSol{
+    width: 375px;
+    height: 800px;
+    position: absolute;
+    z-index: 0;
+    top: -3.6%;
+    left: 72.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRayos{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/rayos.png");   
+} 
+
+
+#escena_04 .flautistaCuerpoEsc05{
+    width: 621px;
+    height: 877px;
+    position: absolute;
+    z-index: 3;
+    top: 24%;
+    left: 11%;
+    background-position: -300% 0%;
+    background-size: 300%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautistaCuerpo_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/flautista_cuerpo.png");   
+}
+
+
+/* #escena_04 .flautistaOjosEsc05{
+    width: 170px;
+    height: 400px;
+    position: absolute;
+    z-index: 3;
+    top: 44.4%;
+    left: 27%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautistaOjos_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/flautista_ojos.png");   
+} */
+
+
+
+
+
+#escena_04 .alcaldeCabezaEsc05{
+    width: 425px;
+    height: 877px;
+    position: absolute;
+    z-index: 4;
+    top: 17.5%;
+    left: 54%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcaldeCabeza_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/alcalde_cabeza.png");   
+}
+
+
+#escena_04 .alcaldeCuerpoEsc05{
+    width: 400px;
+    height: 877px;
+    position: absolute;
+    z-index: 3;
+    top: 58%;
+    left: 54%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcaldeCuerpo_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/alcalde_cuerpo.png");   
+}
+
+
+#escena_04 .alcaldeBrazoEsc05{
+    width: 310px;
+    height: 877px;
+    position: absolute;
+    z-index: 4;
+    top: 61%;
+    left: 66%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcaldeBrazo_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/alcalde_brazo_izq.png");   
+}
+
+
+#escena_04 .alcaldeBrazoMonedas_esc05{
+    width: 310px;
+    height: 877px;
+    position: absolute;
+    z-index: 3;
+    top: 49%;
+    left: 46%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteAlcaldeBrazoMonedas_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/alcalde_brazo_der.png");   
+}
+
+#escena_04 .alcaldeOjosEsc05{
+    width: 186px;
+    height: 400px;
+    position: absolute;
+    z-index: 5;
+    top: 42%;
+    left: 58.1%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteAlcaldeOjos_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/alcalde_ojos.png");   
+}
+
+
+#escena_04 .consejero1Esc05{
+    width: 405px;
+    height: 877px;
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    left: 72%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteConsejero1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/consejero1.png");   
+}
+
+#escena_04 .consejero2Esc05{
+    width: 585px;
+    height: 877px;
+    position: absolute;
+    z-index: 4;
+    top: 33%;
+    left: 80%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+}
+
+.spriteConsejero2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/consejero2.png");   
+}
+
+
+
+/************ESCE05***********/
+
+
+#escena_05 .plano1Esc05{
+    width: 2230px;
+    height: 6040px;
+    position: absolute;
+    z-index: 6;
+    top: 11.4%;
+    left: -8%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spritePlano1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/primer_plano.png");   
+}
+
+
+#escena_05 .plano2Esc05{
+    width: 2530px;
+    height: 6040px;
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+    left: -16%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spritePlano2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/parche.png");   
+}
+
+/* PUENTE 1 */
+#escena_05 .nota1Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 65%;
+    left: 87%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_05 .nota2Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 65%;
+    left: 86%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_05 .nota3Esc05{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 59%;
+    left: 78%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+#escena_05 .nota4Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 50%;
+    left: 61%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_05 .nota5Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 54%;
+    left: 59%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_05 .nota6Esc05{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 54%;
+    left: 47%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+#escena_05 .nota7Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 52%;
+    left: 26%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_05 .nota8Esc05{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 63%;
+    left: 21%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_05 .nota9Esc05{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 69%;
+    left: 10%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+#escena_05 .flautistaEsc05{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    z-index: 5;
+    top: 60%;
+    left: -24%;
+    background-position: -300% 0%;
+    background-size: 300%;
+    background-repeat: repeat-x;
+}
+
+.spriteFlautista_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/flautista.png");   
+}
+
+
+#escena_05 .ninio1Esc05{
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    left: -28%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio1_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_1.png");   
+}
+
+
+#escena_05 .ninio2Esc05{
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    left: -28%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio2_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_2.png");   
+}
+
+
+
+#escena_05 .ninio3Esc05{
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    left: -28%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio3_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_3.png");   
+}
+
+
+#escena_05 .ninio4Esc05{
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    left: -28%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio4_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_4.png");   
+}
+
+
+
+#escena_05 .ninio5Esc05{
+    width: 185px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 75%;
+    left: -28%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio5_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_6.png");   
+}
+
+
+#escena_05 .ninio6Esc05{
+    width: 185px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 78%;
+    left: -28%;
+    background-position: -300% 0%;
+    background-size: 300%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinio6_esc05{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_cojo.png");   
+}
+
+/* PUENTE 2 */
+#escena_05 .nota1Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 11%;
+    left: 89%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_05 .nota2Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 14%;
+    left: 89%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_05 .nota3Esc05B{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 12%;
+    left: 82%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_05 .nota4Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 3%;
+    left: 67%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_05 .nota5Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 67.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota6Esc05B{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 61%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota7Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: -0.5%;
+    left: 47%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota8Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 8%;
+    left: 48.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota9Esc05B{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 11%;
+    left: 42.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_05 .nota10Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 8%;
+    left: 29.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota11Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 18%;
+    left: 32%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota12Esc05B{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 17.5%;
+    left: 27%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_05 .nota13Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 12%;
+    left: 14%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota14Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 18%;
+    left: 16%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota15Esc05B{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 17.5%;
+    left: 12%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_05 .nota16Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
+    z-index: 10;
+    top: 12%;
+    left: -0.5%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+#escena_05 .nota17Esc05B{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 10;
+    top: 18%;
+    left: 2%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+#escena_05 .flautistaEsc05B{
+    width: 270px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 14%;
+    left: 98%;
+    background-position: -300% 0%;
+    background-size: 300%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteFlautista_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/flautista.png");   
+}
+
+
+#escena_05 .ninio1Esc05B{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 110%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio1_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_1.png");   
+}
+
+#escena_05 .ninio2Esc05B{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 110%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio2_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_2.png");   
+}
+
+#escena_05 .ninio3Esc05B{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 110%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio3_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_3.png");   
+}
+
+
+#escena_05 .ninio4Esc05B{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 110%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio4_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_4.png");   
+}
+
+
+#escena_05 .ninio5Esc05B{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 110%;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio5_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_6.png");   
+}
+
+
+#escena_05 .ninio6Esc05B{
+    width: 70px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 26.5%;
+    left: 110%;
+    background-position: -300% 0%;
+    background-size: 300%;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+}
+
+.spriteNinio6_esc05B{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_cojo.png");   
+}
+
+
+
+
+
+
+
+/************ESCE06***********/
+#escena_06 .nota1Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota1_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota1.png");   
+}
+
+#escena_06 .nota2Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota2_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota2.png");   
+}
+
+#escena_06 .nota3Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNota3_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena04/nota3.png");   
+}
+
+#escena_06 .nota4Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota5Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota6Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota7Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota8Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota9Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota10Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota11Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota12Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota13Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota14Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota15Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota16Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota17Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota18Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota19Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota20Esc06{
+    width: 40px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .nota21Esc06{
+    width: 25px;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    opacity:0;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#escena_06 .portalEsc06 #Capa_2_0{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 13.3%;
+    left: 17.6%;
+    height: 468px;
+}
+
+#escena_06 .portalEsc06 #Capa_2_1{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 27.3%;
+    left: 26.6%;
+    height: 330px;
+}
+
+#escena_06 .portalEsc06 #Capa_2_2{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 40.3%;
+    left: 35.6%;
+    height: 200px;
+}
+
+#escena_06 .portalEsc06 #Capa_2_3{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 52.3%;
+    left: 43.6%;
+    height: 80px;
+}
+
+#escena_06 .flautistaEsc06{
+    width: 325px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+    left: 43.1%;
+    background-position: -600% 0%;
+    background-size: 600%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteFlautista_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena07/animacion/flautista.png");   
+}
+
+#escena_06 .portalEsc06{
+    width: 548px;
+    height: 555px;
+    position: absolute;
+    z-index: 0;
+    top: 27.9%;
+    left: 64.5%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spritePortal_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena07/portal.png");   
+}
+
+#escena_06 .buhoEsc06{
+    width: 100px;
+    height: 210px;
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 38.1%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteBuho_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena07/buho.png");   
+}
+
+#escena_06 .buhoOjosEsc06{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 36.3%;
+    left: 38.8%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteBuhoOjos_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena07/buho_ojos.png");   
+}
+
+#escena_06 .ninio1Esc06{
+    width: 120px;
+    height: 280px;
+    position: absolute;
+    z-index: 15;
+    top: 80.4%;
+    left: -7%;
+    opacity: 1;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteNinio1_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_1.png");   
+}
+
+#escena_06 .ninio2Esc06{
+    width: 120px;
+    height: 280px;
+    position: absolute;
+    z-index: 15;
+    top: 80.4%;
+    left: -7%;
+    opacity: 0;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteNinio2_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_2.png");   
+}
+
+#escena_06 .ninio3Esc06{
+    width: 120px;
+    height: 280px;
+    position: absolute;
+    z-index: 15;
+    top: 80.4%;
+    left: -7%;
+    opacity: 0;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteNinio3_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_3.png");   
+}
+
+#escena_06 .ninio4Esc06{
+    width: 120px;
+    height: 280px;
+    position: absolute;
+    z-index: 15;
+    top: 80.4%;
+    left: -7%;
+    opacity: 0;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteNinio4_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_4.png");   
+}
+
+#escena_06 .ninio5Esc06{
+    width: 120px;
+    height: 280px;
+    position: absolute;
+    z-index: 15;
+    top: 80.4%;
+    left: -7%;
+    opacity: 0;
+    background-position: -400% 0%;
+    background-size: 400%;
+    background-repeat: repeat-x;
+    /* transform: scaleX(-1); */
+}
+
+.spriteNinio5_esc06{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena06/animacion/nino_6.png");   
+}
+
+
+
+/************ESCE07***********/
+
+#escena_07 .puenteEsc07{
+    width: 2470px;
+    height: 5000px;
+    position: absolute;
+    z-index: 15;
+    top: 57%;
+    left: -11%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spritePuente_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/puente.png");   
+}
+
+
+#escena_07 .parcheEsc07{
+    width: 2530px;
+    height: 5000px;
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+    left: -16%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteParche_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/parche.png");   
+}
+ 
+
+#escena_07 .solEsc07{
+    width: 221px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 2%;
+    left: 19%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteSol_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/sol.png");   
+}
+
+
+#escena_07 .solRayosEsc07{
+    width: 330px;
+    height: 375px;
+    position: absolute;
+    z-index: 4;
+    top: -3%;
+    left: 16.3%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRayosSol_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/rayos.png");   
+}
+
+
+#escena_07 .nube1Esc07{
+    width: 450px;
+    height: 440px;
+    position: absolute;
+    z-index: 4;
+    top: -2%;
+    left: -13%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube1_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/nube1.png");   
+}
+
+
+#escena_07 .nube2Esc07{
+    width: 422px;
+    height: 400px;
+    position: absolute;
+    z-index: 5;
+    top: 12%;
+    left: 94%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNube2_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/nube2.png");   
+}
+
+
+#escena_07 .ninia1Esc07{
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    z-index: 5;
+    top: 49%;
+    left: 1%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteNinia1_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/nina_dos.png");   
+}
+
+
+#escena_07 .ojosNinia1Esc07{
+    width: 65px;
+    height: 400px;
+    position: absolute;
+    z-index: 6;
+    top: 56.4%;
+    left: 4.7%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteOjosNinia1_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/nina_dos_ojos.png");   
+}
+
+
+
+#escena_07 .abrazo1Esc07{
+    width: 375px;
+    height: 500px;
+    position: absolute;
+    z-index: 6;
+    top: 33.4%;
+    left: 50%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteAbrazo1_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/abrazo_uno.png");   
+}
+
+
+#escena_07 .abrazo2Esc07{
+    width: 330px;
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+    top: 43%;
+    left: 8%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteAbrazo2_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/abrazo_dos.png");   
+}
+
+
+#escena_07 .abrazo3Esc07{
+    width: 375px;
+    height: 500px;
+    position: absolute;
+    z-index: 7;
+    top: 33%;
+    left: 35%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteAbrazo3_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/abrazo_tres.png");   
+}
+
+
+#escena_07 .abrazo4Esc07{
+    width: 375px;
+    height: 500px;
+    position: absolute;
+    z-index: 7;
+    top: 34%;
+    left: 20%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteAbrazo4_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/abrazo_cuatro.png");   
+}
+
+
+#escena_07 .abrazo5Esc07{
+    width: 395px;
+    height: 500px;
+    position: absolute;
+    z-index: 7;
+    top: 27%;
+    left: 65%;
+    background-position: -200% 0%;
+    background-size: 200%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteAbrazo5_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/abrazo_cinco.png");   
+}
+
+
+#escena_07 .locoEsc07{
+    width: 169px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 39%;
+    left: 83.6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteLoco_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/loco.png");   
+}
+
+
+#escena_07 .locoOjosEsc07{
+    width: 72px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 46.5%;
+    left: 81.2%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    transform: rotate(16deg);
+    opacity: 0;
+}
+
+.spriteOjosLoco_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/nina_dos_ojos.png");   
+}
+
+
+#escena_07 .mujerEsc07{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 87%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteMujer_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/mujer.png")   
+}
+
+
+#escena_07 .mujerOjosEsc07{
+    width: 65px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 46.6%;
+    left: 90%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0;
+}
+
+.spriteOjosMujer_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/animacion/mujer_ojos.png");   
+}
+
+#escena_07 .cojoEscEsc07{
+    width: 145px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 51%;
+    left: 93%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+
+}
+
+.spriteCojo_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/cojo.png")   
+}
+
+
+#escena_07 .cojoOjosEsc07{
+    width: 23px;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    top: 56%;
+    left: 94.6%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    opacity: 0; 
+  
+}
+
+.spriteCojoOjos_esc07{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena08/cojo_ojo.png");   
+}
+
+
+
+
+
+
+
+
+
+/*Termina el posicionamiento de sprites*/
+
+
+#escena_01 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_1_fondo.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+#escena_02 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_2_fondo.jpg");
+}
+
+
+#escena_03 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_3_fondo.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+
+#escena_04 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_4_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+#escena_05 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_5_fondo.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+#escena_06 .fondo{           
+    background-image: url("../img/elFlautistaDeHamelin/esc_6_fondo.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+#escena_07 .fondo{ 
+    background-image: url("../img/elFlautistaDeHamelin/esc_7_fondo.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+
+
+#escena_00 .btn_interact{ top: 44%; left: 68%;}
+#escena_01 .btn_interact{ top: 28%; left: 72%;}
+#escena_02 .btn_interact {top: 53%; left: 40%;}
+#escena_03 .btn_interact {top: 61%; left: 40%;}
+#escena_04 .btn_interact {top: 384px; left: 926px;}
+    
+#escena_05 .btn_interact{ top: 27%; left: 47%;}
+#escena_06 .btn_interact{ top: 45%; left: 54%;}
+#escena_07 .btn_interact{ top: 59%; left: 49%;}
+
+
+
+
+
+
+
+
+
+
+
