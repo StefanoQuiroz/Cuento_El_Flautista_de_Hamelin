@@ -1310,6 +1310,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1360,6 +1362,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1410,6 +1414,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1460,6 +1466,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1510,6 +1518,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1561,6 +1571,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -1611,6 +1623,8 @@
     width: 40px;
     height: 65px;
     position: absolute;
+    margin-left: 150px;
+    margin-top: 65px;
     z-index: 1;
     top: 0%;
     left: 0%;
@@ -2621,6 +2635,7 @@
     z-index: 3;
     top: 24%;
     left: 11%;
+    opacity:0;
     background-position: -300% 0%;
     background-size: 300%;
     background-repeat: repeat-x;
@@ -2631,21 +2646,22 @@
 }
 
 
-/* #escena_04 .flautistaOjosEsc05{
+#escena_04 .flautistaOjosEsc05{
     width: 170px;
-    height: 400px;
+    height: 60px;
     position: absolute;
     z-index: 3;
-    top: 44.4%;
-    left: 27%;
+    top: 46.1%;
+    left: 26.35%;
+    opacity: 0;
     background-position: -100% 0%;
     background-size: 100%;
     background-repeat: repeat-x;
 }
 
 .spriteFlautistaOjos_esc05{ 
-    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/flautista_ojos.png");   
-} */
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena05/animacion/flautista_ojosCerrados.png");   
+}
 
 
 
@@ -4373,7 +4389,7 @@
 #escena_01 .btn_interact{ top: 28%; left: 72%;}
 #escena_02 .btn_interact {top: 53%; left: 40%;}
 #escena_03 .btn_interact {top: 61%; left: 40%;}
-#escena_04 .btn_interact {top: 384px; left: 926px;}
+#escena_04 .btn_interact {top: 250px; left: 1226px;}
     
 #escena_05 .btn_interact{ top: 27%; left: 47%;}
 #escena_06 .btn_interact{ top: 45%; left: 54%;}

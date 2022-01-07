@@ -5,15 +5,19 @@ let JSON_CUENTO = {
     descripcion:
       '“El flautista de Hamelin” Narra la historia de un pueblo que se encuentra atestado de ratas, razón que desespera a todos sus habitantes. Un día aparece un joven que ofrece solucionar de una vez por todas la gran plaga de Hamelin, pero a cambio exige cierta compensación por su trabajo, el pueblo acepta, y el flautista con tres tonadas de su instrumento logra que todas las ratas se marchen del pueblo. El problema surge cuando el tacaño alcalde de Hamelin se reúsa pagar al joven la suma que le correspondía. Ahí es cuando el flautista decide tomar justicia por sus manos y reclamar la suma hipnotizando a los niños del pueblo y llevándolos hacia una cueva mágica, hasta recibir el pago prometido. Este relato es una adaptación libre basada en una leyenda popular alemana, atribuida a los hermanos Grimm en 1816. La leyenda registra un suceso oscuro, ocurrido en Alemania en 1284, donde se secuestraron a niños en el pueblo de Hamelin. La principal fuente que patenta este relato oral se encuentra en el vitral de la iglesia de Hamelin elaborado en el 1300 d.c. ',
     creditos: [
-      ['Autora:', ''],
-      ['Ilustraciones:', ''],
-      ['Narración:', ''],
-      ['Arreglos musicales:', ''],
+      ['Adaptación:', 'Copec'],
+      ['Ilustraciones:', 'Copec'],
+      ['Narración:', 'Nicole Castillo Ramírez'],
+      ['Arreglos musicales:', 'Copec y Entrelíneas'],
       [
-        "Edición a cargo de:","Constanza Ried Silva<br>Verónica Vives Cofré<br>Fundación Entrelíneas"
+        'Edición a cargo de:',
+        'Copec',
       ],
       ['Montaje y desarrollo web:', 'Agencia Match'],
-      ['Créditos de sonidos:', ""]
+      [
+        'Créditos de sonidos:',
+        "Revise detalles <a href='#' target='_blank'>aquí</a>",
+      ],
     ],
     ID: 0,
     imagenes: [
@@ -66,6 +70,10 @@ let JSON_CUENTO = {
       {
         nombre: 'copia_de_musica_flauta_magica_esc_08',
         url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_esc_08.mp3',
+      },
+      {
+        nombre: 'copia_de_musica_flauta_magica_Esc01',
+        url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_Esc01.mp3',
       },
       {
         nombre: 'cueva_magica',
@@ -406,27 +414,30 @@ let JSON_CUENTO = {
         let preAnimacion2 = new TimelineMax();
         preAnimacion2
              //RATA 1
-             .from('#escena_01 .rata1OjoEsc01', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1})
-             .addCallback(function(){
-              Player.playSoundFX('voz_de_rata_1');
-              Player.cambiaVolume('voz_de_rata_1', true);  
-            }, 0)
+            .from('#escena_01 .rata1OjoEsc01', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:8},0)
             .addCallback(function(){
-              Player.playSoundFX('voz_de_rata_2');
-              Player.cambiaVolume('voz_de_rata_2', true);  
-            }, 3)
-             .set("#escena_01 .rata1ColaEsc01", {transformOrigin:"center top",repeat:-1})
-             .to('#escena_01 .rata1ColaEsc01', 1.5, {rotation:13, ease:"wiggle",yoyo:true,repeat:-1}) 
-              //RATA 2
-             .to('#escena_01 .rata2OjoEsc01', 1.3, {autoAlpha:1, duration:.3,ease: Power4.easeOut ,repeat:-1})
+            Player.playSoundFX('voz_de_rata_1');
+            Player.cambiaVolume('voz_de_rata_1', true);  
+          }, 0)
+          .addCallback(function(){
+            Player.playSoundFX('voz_de_rata_2');
+            Player.cambiaVolume('voz_de_rata_2', true);  
+          }, 3)
+            .set("#escena_01 .rata1ColaEsc01", {transformOrigin:"center top",repeat:-1})
+            .to('#escena_01 .rata1ColaEsc01', 1.5, {rotation:13, ease:"wiggle",yoyo:true,repeat:-1}) 
+            //RATA 2
+            .to('#escena_01 .rata2OjoEsc01', 1.3, {autoAlpha:1, duration:.3,ease: Power4.easeOut ,repeat:4}, 0.3)
+            
+            
+            
 
         ANIM.main_tl.add(preAnimacion2, '1_0-=0');
 
         
         /* Escena02*/
 
-        let preAnimacion3 = new TimelineMax();
-        preAnimacion3
+        let preAnimacion3_1 = new TimelineMax();
+        preAnimacion3_1
             .fromTo('#escena_02 .ratonNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonesEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
@@ -439,7 +450,16 @@ let JSON_CUENTO = {
             .to('#escena_03 .loboEsc4', 2.1,{x:920, ease:Linear.easeNone}, 2.01)
             //.to('#escena_03 .loboEsc4',0.1, {backgroundPosition:'100% 0%', opacity:0}, "-=0")
             .to('#escena_03 .loboEsc4',0.1,{backgroundPosition:'500% 0%', ease: SteppedEase.config(1)},"-=0") */
-        ANIM.main_tl.add(preAnimacion3, '2_0-=0');
+        ANIM.main_tl.add(preAnimacion3_1, '2_0-=0');
+
+        let preAnimacion3_2 = new TimelineMax();
+        preAnimacion3_2
+            .fromTo('#escena_02 .ratonNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            .fromTo('#escena_02 .ratonCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            .fromTo('#escena_02 .ratonesEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            .fromTo('#escena_02 .ratonTejadoNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            .fromTo('#escena_02 .ratonTejadoCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+        ANIM.main_tl.add(preAnimacion3_2);
 
         /* let preAnimacion3_1 = new TimelineMax();
         preAnimacion3_1
@@ -464,7 +484,8 @@ let JSON_CUENTO = {
                 each: 0.5,
                 repeat: -1,
               }})
-            .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0,duration:3, ease: Power4.easeOut,repeat:-1},0)
+              //.from("#escena_04 .flautistaCuerpoEsc05",1.5,{backgroundPosition:'0% 0%', ease: Power4.easeOut, ease: SteppedEase.config(0)},0)
+            //.from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0,duration:3, ease: Power4.easeOut,repeat:-1},0)
 
         ANIM.main_tl.add(preAnimacion5, '4_0+=0');
 
@@ -546,8 +567,8 @@ let JSON_CUENTO = {
         ANIM.main_tl.addLabel('0_0_audio', 'escena_0+=0.1');
         ANIM.main_tl.addLabel('0_0_audio_fade', '0_1-=2');
         ANIM.main_tl.addCallback(function () {
-            Player.playSoundFX('copia_de_copia_de_copia_de_musica_flauta_mágica');
-            Player.cambiaVolume('copia_de_copia_de_copia_de_musica_flauta_mágica', 0.5);
+            Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
+            Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.5);
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
             ANIM.fadeVolume('sonido_de_paja',1,0,2);
@@ -731,7 +752,53 @@ let JSON_CUENTO = {
               Player.playSoundFX('publico_disgustado_copia');
               Player.cambiaVolume('publico_disgustado_copia', 0.7); 
             },0)
-            .fromTo('#escena_01 .enojadaEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:5})
+            
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:1.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:3.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:4.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:5.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:6.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:7.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:8.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:9.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:10.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:11.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:12.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:13.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:14.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:15.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:16.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:17.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:18.0, immediateRender:false},0) 
+            .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:19.0, immediateRender:false},0)
+            .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:20.0, immediateRender:false},0) 
+
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:1.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:3.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:4.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:5.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:6.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:7.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:8.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:9.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:10.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:11.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:12.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:13.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:14.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:15.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:16.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:17.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:18.0, immediateRender:false},0) 
+            .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:19.0, immediateRender:false},0)
+            .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:20.0, immediateRender:false},0) 
+            
+            //.from('#escena_01 .rata1OjoEsc01', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:8},0)
+            //.to('#escena_01 .rata2OjoEsc01', 1.3, {autoAlpha:1, duration:0.3,ease: Power4.easeOut ,repeat:8}, 0)
+            
+            .fromTo('#escena_01 .enojadaEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:5}, 0)
             .fromTo('#escena_01 .rojoEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:5},0)
 
             .to('#escena_01 .bocado1Esc01',.1,{autoAlpha:1},1)
@@ -1340,7 +1407,7 @@ let JSON_CUENTO = {
             .to("#escena_04 .nube1",13,{x:1400,yoyo:true, duration: 1.5},0)
             .to("#escena_04 .nube2",13,{x:-1400,yoyo:true, duration: 1.5},0)
             .to("#escena_04 .rayosDeSol",4,{opacity:0.5, scale:0.9, duration: 1.5},0)
-            .from("#escena_04 .rayosDeSol",4,{ scale: 1.05, 
+            .from("#escena_04 .rayosDeSol",3,{ scale: 1.05, 
               duration: 1.5,
               stagger: {
                 each: 0.5,
@@ -1361,7 +1428,21 @@ let JSON_CUENTO = {
             
             .fromTo('#escena_04 .consejero1Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
             .fromTo('#escena_04 .consejero2Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
-            .fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'200% 0%'},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1),repeat:1}, 2)
+            
+            //.fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'0% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1)}, 2)
+            //.set("#escena_04 .flautistaCuerpoEsc05", {autoAlpha:0, immediateRender:false}, 2)
+            .fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'200% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1),repeat:1}, 2)
+
+            .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:1.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:2.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:3.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:4.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:5.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:6.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:7.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.8,{autoAlpha:0, delay:8.0, immediateRender:false},0)
+            .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:9.0, immediateRender:false},0) 
+            .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:10.0, immediateRender:false},0)
 
             .addLabel('final');    
         ANIM.anim_interact_alcaldeMalo.pause();
