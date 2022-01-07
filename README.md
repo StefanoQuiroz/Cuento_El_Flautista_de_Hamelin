@@ -9,4 +9,4 @@
 | 05 | Terminada y revisada según la escaleta |
 | 06 | Terminada y revisada según la escaleta |
 | 07 | Terminada y revisada según la escaleta |
-| 08 | Terminada y revisada según la escaleta, falta una persona |
+| 08 | Terminada y revisada según la escaleta |
