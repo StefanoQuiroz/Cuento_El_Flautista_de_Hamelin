@@ -796,8 +796,10 @@ a{
     overflow: hidden;
 }
 .creditos .imagen_portada img{
+    /* width: auto;*/
     width: auto;
     height: 100%;
+    
 }
 .creditos .creditos_portada{}
 .creditos .creditos_portada h1{
