@@ -44,6 +44,10 @@ let JSON_CUENTO = {
         url: 'audio/elFlautistaDeHamelin/fx/chapuzon_de_ratas.mp3',
       },
       {
+        nombre: 'copia_de_mercado',
+        url: 'audio/elFlautistaDeHamelin/fx/copia_de_mercado.mp3',
+      },
+      {
         nombre: 'ciudad_de_ratas',
         url: 'audio/elFlautistaDeHamelin/fx/ciudad_de_ratas.mp3',
       },
@@ -138,7 +142,7 @@ let JSON_CUENTO = {
           {
             texto:
               'Hamelin era una ciudad muy hermosa,<br> llena de torres y puentes, árboles y flores.',
-            tiempo: [0, 6.4, 10.0],
+            tiempo: [0, 6.4, 14.0],
           },
           {
             texto:
@@ -148,7 +152,7 @@ let JSON_CUENTO = {
           {
             texto:
               'Pero un día las ratas invadieron la ciudad mordisqueando y comiéndose todo.',
-            tiempo: [10.8, 16.3, 0],
+            tiempo: [10.8, 16.7,0],
           }
         ],
       },
@@ -391,23 +395,65 @@ let JSON_CUENTO = {
         let preAnimacion1 = new TimelineMax();
         preAnimacion1
             //RATA 1
-            .from('#escena_00 .rata1OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1})
-            .set("#escena_00 .rata1ColaEsc00", {transformOrigin:"center top",repeat:-1})
-            .to('#escena_00 .rata1ColaEsc00', 2, {rotation:-20, ease:"wiggle",yoyo:true,repeat:-1})
+            /* .from('#escena_00 .rata1OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1}) */
+            /* .set("#escena_00 .rata1ColaEsc00", {transformOrigin:"center top",repeat:-1})
+            .to('#escena_00 .rata1ColaEsc00', 2, {rotation:-20, ease:"wiggle",yoyo:true,repeat:-1}) */
             //RATA 2
-            .fromTo('#escena_00 .rata2Esc00',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            /* .fromTo('#escena_00 .rata2Esc00',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .set("#escena_00 .rata2ColaEsc00", {transformOrigin:"center bottom"},0)
-            .to('#escena_00 .rata2ColaEsc00', 2, {rotation:8, ease:"wiggle",yoyo:true,repeat:-1},0)
+            .to('#escena_00 .rata2ColaEsc00', 2, {rotation:8, ease:"wiggle",yoyo:true,repeat:-1},0) */
             //RATA 3
-            .from('#escena_00 .rata3OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0)
-            .to('#escena_00 .rata3ColaEsc00', 2, {rotation:165, ease:"wiggle",yoyo:true,repeat:-1},0)
+            /* .from('#escena_00 .rata3OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0)
+            .to('#escena_00 .rata3ColaEsc00', 2, {rotation:165, ease:"wiggle",yoyo:true,repeat:-1},0) */
             //RATA 4
-            .from('#escena_00 .rata4OjoEsc00', 1, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0)
+            /* .from('#escena_00 .rata4OjoEsc00', 1, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0) */
 
            /*  .to('#escena_00 .rata4ColaEsc00', 2, {rotation:-65, ease:"wiggle",yoyo:true,repeat:-1},0)   */
            
           
         ANIM.main_tl.add(preAnimacion1,'0_0-=0');
+
+        let preAnimacion1_2 = new TimelineMax();
+        preAnimacion1_2
+            //RATA 1
+            .from('#escena_00 .rata1OjoEsc00', 1.3, {duration:2, ease: Power4.easeOut,repeat:-1}, 0)
+            .to('#escena_00 .rata1ColaEsc00', 2, {rotation:-20, ease:"wiggle",yoyo:true,repeat:-1}, 0)
+            
+            .set("#escena_00 .rata1CabezaEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata1CuerpoEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata1ColaEsc00", {autoAlpha:1, transformOrigin:"center top",repeat:-1})
+            //.set("#escena_00 .rata1ColaEsc00", {autoAlpha:1})
+          
+            //RATA 2
+            .fromTo('#escena_00 .rata2Esc00',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
+            .set("#escena_00 .rata2ColaEsc00", {transformOrigin:"center bottom"},0)
+            .to('#escena_00 .rata2ColaEsc00', 2, {rotation:8, ease:"wiggle",yoyo:true,repeat:-1},0)
+
+            .set("#escena_00 .rata2Esc00", {autoAlpha:1})
+            .set("#escena_00 .rata2ColaEsc00", {autoAlpha:1})
+           
+            //RATA 3
+            .from('#escena_00 .rata3OjoEsc00', 1.3, {duration:2, ease: Power4.easeOut,repeat:-1},0)
+            .to('#escena_00 .rata3ColaEsc00', 2, {rotation:165, ease:"wiggle",yoyo:true,repeat:-1},0)
+            
+            .set("#escena_00 .rata3CabezaEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata3OjoEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata3CuerpoEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata3ColaEsc00", {autoAlpha:1})
+            //RATA 4
+            .from('#escena_00 .rata4OjoEsc00', 1, {duration:2, ease: Power4.easeOut,repeat:-1},0)
+            .set("#escena_00 .rata4CabezaEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata4CuerpoEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata4OjoEsc00", {autoAlpha:1})
+            .set("#escena_00 .rata4ColaEsc00", {autoAlpha:1})
+          
+
+           /*  .to('#escena_00 .rata4ColaEsc00', 2, {rotation:-65, ease:"wiggle",yoyo:true,repeat:-1},0)   */
+           
+          
+        ANIM.main_tl.add(preAnimacion1_2, '0_2-=1');
+
+
 
 
         /* Escena01 */
@@ -568,10 +614,10 @@ let JSON_CUENTO = {
         ANIM.main_tl.addLabel('0_0_audio_fade', '0_1-=2');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
-            Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.5);
+            Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.3);
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('sonido_de_paja',1,0,2);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',1,0.4,5);
         }, "0_0_audio_fade");
         
         ANIM.main_tl.addLabel('1_0_audio', 'escena_1+=0.1');
@@ -597,8 +643,8 @@ let JSON_CUENTO = {
             ANIM.interactividad(0); 
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
-            //Player.playSoundFX('ciudad_de_ratas_copia');
-            //Player.cambiaVolume('ciudad_de_ratas_copia', true);  
+            Player.playSoundFX('copia_de_mercado');
+            Player.cambiaVolume('copia_de_mercado', 0.5);  
         }, "fin_escena_0"); 
 
         ANIM.main_tl.addCallback(function () {

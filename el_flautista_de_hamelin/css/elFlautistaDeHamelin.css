@@ -67,6 +67,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 47%;
     left: -3%;
     background-position: -100% 0%;
@@ -84,12 +85,12 @@
     height: 100px;
     position: absolute;
     z-index: 2;
+    opacity:0;
     top: 53%;
     left: 0%;
     background-position: -100% 0%;
     background-size: 100%;
     background-repeat: repeat-x;
-    opacity: 0;
 }
 
 .spriteRata1Ojo_esc00{ 
@@ -102,6 +103,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 58%;
     left: -4%;
     background-position: -100% 0%;
@@ -119,6 +121,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 75%;
     left: -1.5%;
     background-position: -100% 0%;
@@ -137,6 +140,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 80%;
     left: 4%;
     background-position: -200% 0%;
@@ -154,6 +158,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 89%;
     left: 14%;
     background-position: -100% 0%;
@@ -174,23 +179,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
-    top: 80%;
-    left: 32%;
-    background-position: -100% 0%;
-    background-size: 100%;
-    background-repeat: repeat-x;
-}
-
-.spriteRata3Cabeza_esc00{ 
-    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cabeza.png");   
-}
-
-
-#escena_00 .rata3CabezaEsc00{
-    width: 200px;
-    height: 500px;
-    position: absolute;
-    z-index: 2;
+    opacity: 0;
     top: 78%;
     left: 30%;
     background-position: -100% 0%;
@@ -202,11 +191,30 @@
     background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cabeza.png");   
 }
 
+
+/* #escena_00 .rata3CabezaEsc00{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    top: 78%;
+    left: 30%;
+    background-position: -100% 0%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+.spriteRata3Cabeza_esc00{ 
+    background-image: url("../img/elFlautistaDeHamelin/sprite/escena01/rata3_cabeza.png");   
+} */
+
 #escena_00 .rata3OjoEsc00{
     width: 46px;
     height: 100px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 83%;
     left: 33.7%;
     background-position: -100% 0%;
@@ -226,6 +234,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 88%;
     left: 28%;
     background-position: -100% 0%;
@@ -243,6 +252,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 88%;
     left: 25%;
     background-position: -100% 0%;
@@ -261,6 +271,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 83%;
     left: 44%;
     background-position: -100% 0%;
@@ -277,6 +288,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 92%;
     left: 50%;
     background-position: -100% 0%;
@@ -294,6 +306,7 @@
     height: 100px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 89%;
     left: 49%;
     background-position: -100% 0%;
@@ -313,6 +326,7 @@
     height: 500px;
     position: absolute;
     z-index: 2;
+    opacity: 0;
     top: 55%;
     left: 56%;
     background-position: -100% 0%;
