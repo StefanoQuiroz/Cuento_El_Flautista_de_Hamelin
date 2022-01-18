@@ -204,17 +204,17 @@ let JSON_CUENTO = {
           {
             texto:
               'Solo tres notas bastaron para que todas las ratas levantaran sus orejas <br> y comenzaran a seguir al joven.',
-            tiempo: [0, 7.4, 0.5],
+            tiempo: [0, 7.5, 2]
           },
   
           {
             texto: 'El mágico flautista caminó hacia el río y las ratas <br>lo siguieron como si estuvieran hechizadas.',
-            tiempo: [7.9, 14.5, 0.5],
+            tiempo: [8.5, 15.1, 1.0]
           },
   
           {
             texto: 'En poco tiempo, la ciudad quedó libre de ratas. ',
-            tiempo: [15.0, 18.7, 0.5],// 18.7 => 15.6
+            tiempo: [16.1, 19.8, 1.0]
           }
         ],
       },
@@ -615,23 +615,26 @@ let JSON_CUENTO = {
 
         
         ANIM.main_tl.addLabel('0_0_audio', 'escena_0+=0.1');
-        ANIM.main_tl.addLabel('0_0_audio_fade', '0_1-=2');
+        ANIM.main_tl.addLabel('0_0_audio_fade', '0_1-=3');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
             Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.3);
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',1,0.4,5);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',1,0,2);
         }, "0_0_audio_fade");
         
-        ANIM.main_tl.addLabel('1_0_audio', 'escena_1+=0.1');
-        ANIM.main_tl.addLabel('1_0_audio_fade', '1_0-=2');
+        ANIM.main_tl.addLabel('3_0_audio', 'escena_3+=0.1');
+        ANIM.main_tl.addLabel('3_0_audio_fade', '3_0-=2');
         ANIM.main_tl.addCallback(function () {
-            Player.playSoundFX('bosque');
-        }, '1_0_audio');
+            Player.playSoundFX('flauta_solucion');
+            Player.cambiaVolume('flauta_solucion', 0.3);
+        }, '3_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('bosque',1,0,2);
-        }, "1_0_audio_fade");
+            ANIM.fadeVolume('flauta_solucion',1,0,2);
+        }, "3_0_audio_fade");
+        
+        
 
         
 
