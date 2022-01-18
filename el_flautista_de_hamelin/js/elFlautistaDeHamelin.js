@@ -293,19 +293,19 @@ let JSON_CUENTO = {
         parrafos: [
           {
             texto:'El alcalde y los vecinos, arrepentidos, <br> comprendieron que debían cumplir su palabra.',
-            tiempo: [0, 6.4, 0.5],
+            tiempo: [0, 6.4, 10.0],
           },
           {
             texto: 'Así lo hicieron, y después de un largo tiempo de dolor y angustia.',
-            tiempo: [6.9, 11.4, 0.5]
+            tiempo: [7.4, 12.0, 1.0]
           },
           {
             texto: 'Los niños por fin pudieron reunirse con sus familias en Hamelin.',
-            tiempo: [11.9, 16.7, 0.5]
+            tiempo: [13.0, 17.8, 1.0]
           },
           {
             texto: 'Y colorín colorado este cuento se ha acabado',
-            tiempo: [17.2, 21.1, 0.5]
+            tiempo: [18.3, 22.2, 0.5]
           }
         ],
       },
@@ -633,6 +633,16 @@ let JSON_CUENTO = {
         ANIM.main_tl.addCallback(function () {
             ANIM.fadeVolume('flauta_solucion',1,0,2);
         }, "3_0_audio_fade");
+
+        ANIM.main_tl.addLabel('7_0_audio', 'escena_7+=0.1');
+        ANIM.main_tl.addLabel('7_0_audio_fade', '7_1-=3');
+        ANIM.main_tl.addCallback(function () {
+            Player.playSoundFX('copia_de_musica_flauta_magica_esc_08');
+            Player.cambiaVolume('copia_de_musica_flauta_magica_esc_08', 0.3);
+        }, '7_0_audio');
+        ANIM.main_tl.addCallback(function () {
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_esc_08',1,0,2);
+        }, "7_0_audio_fade");
         
         
 
@@ -751,8 +761,8 @@ let JSON_CUENTO = {
             Player.activaBtnSiguiente();
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
-            Player.playSoundFX('musica_de_cerditos');
-            Player.cambiaVolume('musica_de_cerditos', true);
+            Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
+            Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.3);
         }, "fin_escena_7");
             
       ANIM.creaAnimInteractividad();
@@ -1909,7 +1919,7 @@ let JSON_CUENTO = {
 
         /********ESCENA 07 *********/
 
-        const ojosPuente = ['#escena_07 .ojosNinia1Esc07','#escena_07 .locoOjosEsc07','#escena_07 .mujerOjosEsc07','#escena_07 .cojoOjosEsc07',];
+        //const ojosPuente = ['#escena_07 .ojosNinia1Esc07','#escena_07 .locoOjosEsc07','#escena_07 .mujerOjosEsc07','#escena_07 .cojoOjosEsc07',];
 
         const abrazos1 = ['#escena_07 .abrazo4Esc07','#escena_07 .abrazo5Esc07'];
 
@@ -1918,11 +1928,6 @@ let JSON_CUENTO = {
          ANIM.anim_interact_reencuentro= new TimelineMax();
          ANIM.anim_interact_reencuentro
           .addLabel('inicio')
-          .addCallback(function(){
-            Player.playSoundFX('copia_de_musica_flauta_magica_esc_08');
-            Player.cambiaVolume('copia_de_musica_flauta_magica_esc_08', 0.5); 
-          }, 0)
-
           .to("#escena_07 .nube1Esc07",12,{x:1400,yoyo:true},0)
           .to("#escena_07 .nube2Esc07",12,{x:-1400,yoyo:true},0)
           .to("#escena_07 .solRayosEsc07",4,{opacity:0.5, scale:0.9,repeat:1},0)
@@ -1931,7 +1936,7 @@ let JSON_CUENTO = {
             stagger: {
               each: 0.5,
             }})
-          .from(ojosPuente,0.6,{autoAlpha:1, delay:1.0, immediateRender:false, repeat:9},0)
+          //.from(ojosPuente,0.6,{autoAlpha:1, delay:1.0, immediateRender:false, repeat:9},0)
           .fromTo(abrazos1,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0)
           .fromTo(abrazos2,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0.4)
           .fromTo('#escena_07 .abrazo2Esc07',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:7}, 0.8)          
