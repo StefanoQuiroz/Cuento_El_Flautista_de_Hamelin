@@ -231,12 +231,12 @@ let JSON_CUENTO = {
           {
             texto:
               'Tu trabajo fue muy fácil, por lo que solamente te daré una moneda.',
-            tiempo: [5.2, 9.5, 0.5],
+            tiempo: [5.7, 10.0, 1.0],
           },
           {
             texto:
               'El joven le contestó: <br> Si no cumples con tu palabra, lo lamentarás.',
-            tiempo: [10.0, 15.0, 0.5],
+            tiempo: [11.0, 17.0, 1.0],
           }
         ],
       },
