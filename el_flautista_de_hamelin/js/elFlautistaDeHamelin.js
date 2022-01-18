@@ -247,22 +247,22 @@ let JSON_CUENTO = {
         parrafos: [
           {
             texto: 'El alcalde se rehusó a cumplir con su palabra.',
-            tiempo: [0, 3.3, 0.5],
+            tiempo: [0, 3.4, 0.5],
           },
           {
             texto:
               'El joven pidió ayuda a los vecinos, que lo ignoraron, <br> pues el problema de las ratas ya estaba solucionado.',
-            tiempo: [3.8, 10.2, 0.5],
+            tiempo: [4.1, 10.6, 0.7],
           },
           {
             texto:
               'El flautista salió entonces por las calles de Hamelin tocando su flauta dulcemente.',
-            tiempo: [10.7, 16.7, 0.5],
+            tiempo: [11.6, 17.6, 1.0],
           },
           {
             texto:
               'Al oírla, todos los niños de la ciudad <br> lo siguieron como hipnotizados con su música.',
-            tiempo: [17.2, 22.7, 0.5], // 22.7 => 17.6
+            tiempo: [18.6, 24.5, 1.0], // 22.7 => 17.6
           }
         ],
       },
