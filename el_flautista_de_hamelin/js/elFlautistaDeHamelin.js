@@ -183,12 +183,16 @@ let JSON_CUENTO = {
         parrafos: [
           {
             texto:
-              'Entre la multitud apareció un joven con una flauta en la mano. <br> Yo puedo ayudarlos, dijo.',
-            tiempo: [0, 7.6, 0.5],
+              'Entre la multitud apareció un joven con una flauta en la mano. <br> "Yo puedo ayudarlos", dijo.',
+            tiempo: [0, 7.6, 0.5]
           },
           {
-            texto: 'A cambio pido un puñado de monedas de oro.<br> El alcalde, estrechando su mano, aceptó el trato.',
-            tiempo: [8.1, 14.9, 0.5], //14.9 => 8.6
+            texto: '"A cambio pido un puñado de monedas de oro" ',
+            tiempo: [8.1, 11.0, 0.5]
+          },
+          {
+            texto: 'El alcalde, estrechando su mano, aceptó el trato.',
+            tiempo: [12, 15.7, 1.0]
           }
         ],
       },
@@ -945,8 +949,8 @@ let JSON_CUENTO = {
             .from("#escena_02 .flautistaBocaEsc02",1.5,{autoAlpha:0, delay:6.0, immediateRender:false},0)
 
             .to("#escena_02 .bocadoEsc02",0.5,{opacity:1},1)
-            .to("#escena_02 .bocadoRataEsc02",0.5,{opacity:1},2)
-            .to("#escena_02 .bocadoRataEsc02",0.5,{opacity:0},4)
+            .to("#escena_02 .bocadoOroEsc02",0.5,{opacity:1},2)
+            .to("#escena_02 .bocadoOroEsc02",0.5,{opacity:0},4)
             .to("#escena_02 .bocadoOroEsc02",0.5,{opacity:1},4)
             .to("#escena_02 .bocadoOroEsc02",0.5,{opacity:0},6)
             .to("#escena_02 .bocadoEsc02",0.5,{opacity:0},6)

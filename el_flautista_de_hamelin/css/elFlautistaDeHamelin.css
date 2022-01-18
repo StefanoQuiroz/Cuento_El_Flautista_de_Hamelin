@@ -1103,23 +1103,6 @@
     background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/oro.png");   
 }
 
-#escena_02 .bocadoRataEsc02{
-    width: 290px;
-    height: 250px;
-    position: absolute;
-    z-index: 10;
-    top: 4.5%;
-    left: 57.9%;
-    background-position: -100% 0%;
-    background-size: 100%;
-    background-repeat: repeat-x;
-    opacity:0;
-}
-
-.spriteBocadoRata_esc02{ 
-    background-image: url("../img/elFlautistaDeHamelin/sprite/escena03/rata.png");   
-}
-
 #escena_02 .flautistaEsc02{
     width: 560px;
     height: 1040px;
