@@ -76,6 +76,10 @@ let JSON_CUENTO = {
         url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_Esc06.mp3',
       },
       {
+        nombre: 'copia_de_musica_flauta_magica_Esc04',
+        url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_Esc04.mp3',
+      },
+      {
         nombre: 'copia_de_musica_flauta_magica_esc_08',
         url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_esc_08.mp3',
       },
@@ -218,7 +222,11 @@ let JSON_CUENTO = {
   
           {
             texto: 'En poco tiempo, la ciudad quedó libre de ratas. ',
-            tiempo: [16.1, 19.8, 1.0]
+            tiempo: [16.1, 20.0, 1.0] // 16,47,1
+          },
+          {
+            texto: '',
+            tiempo: [20.5, 47.5, 0.5] // 16,47,1
           }
         ],
       },
@@ -526,6 +534,71 @@ let JSON_CUENTO = {
 
         
 
+        /* Escena 04 */
+        var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
+
+        pathAlternativoRataNegra = "M-27.8 33.004 566.787 33.004 728.13 460.269"
+
+        var arrayPath = [];
+        var newPath = Snap.path.toCubic(pathString);
+
+        function setUpPoint(segment){
+          for(var i = 0; i < segment.length; i+=2){
+            var point = {};
+            point.x = segment[i];
+            point.y = segment[i+1];
+            arrayPath.push(point);
+          }
+        }
+
+        
+        for(var i = 0; i < newPath.length; i++){
+          var segment = newPath[i], pointt;
+          segment.shift();
+          pointt = setUpPoint(segment);
+        }
+
+        const notasMusicales = [
+          "#escena_03 .nota1Esc03",
+          "#escena_03 .nota2Esc03",
+          "#escena_03 .nota3Esc03",
+          "#escena_03 .nota4Esc03",
+          "#escena_03 .nota5Esc03",
+          "#escena_03 .nota6Esc03",
+          "#escena_03 .nota7Esc03",
+          "#escena_03 .nota8Esc03",
+          "#escena_03 .nota9Esc03",
+         /*  "#escena_03 .nota10Esc03",
+          "#escena_03 .nota11Esc03",
+          "#escena_03 .nota12Esc03",
+          "#escena_03 .nota13Esc03",
+          "#escena_03 .nota14sc03",
+          "#escena_03 .nota15Esc03",
+          "#escena_03 .nota16Esc03",
+          "#escena_03 .nota17Esc03",
+          "#escena_03 .nota18Esc03",
+          "#escena_03 .nota19Esc03",
+          "#escena_03 .nota20Esc03",
+          "#escena_03 .nota21Esc03", */
+        ]
+        let preAnimacion4 = new TimelineMax();
+        preAnimacion4
+          .addCallback(function(){
+            Player.playSoundFX('copia_de_musica_flauta_magica_Esc04');
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,32);
+            //Player.cambiaVolume('copia_de_musica_flauta_magica', 0.4);    
+          }, "-=15")
+
+          .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15")
+
+          for(let i=0; i<notasMusicales.length;i++){
+            preAnimacion4
+              .set(notasMusicales[i], { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.5*i)
+              .to(notasMusicales[i], 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 1.5*i)
+              .to(notasMusicales[i], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 1.5*i)
+          } 
+          
+        ANIM.main_tl.add(preAnimacion4, '3_3-=0')
         /* Escena 04 */
         let preAnimacion5 = new TimelineMax({repeat:-1});
         preAnimacion5
@@ -991,7 +1064,7 @@ let JSON_CUENTO = {
         /* var pathString = "M1079.339 467.64c90.371 184.09 123.844 224.253 317.975 160.658 16.735-66.942 13.388-107.106 10.041-97.066-63.596-80.329-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356"; */
         
         //Funcion que toma el SVG path y los convierte en un arreglo de coordendas (x,y) para la propiedad bezier (TweenMax 2.1.3)
-        var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
+        /* var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
 
         pathAlternativoRataNegra = "M-27.8 33.004 566.787 33.004 728.13 460.269"
 
@@ -1012,9 +1085,9 @@ let JSON_CUENTO = {
           var segment = newPath[i], pointt;
           segment.shift();
           pointt = setUpPoint(segment);
-        } 
+        }  */
         //console.log("array:", arrayPath);
-        
+        /*
         const notasMusicales = [
           "#escena_03 .nota1Esc03",
           "#escena_03 .nota2Esc03",
@@ -1025,7 +1098,7 @@ let JSON_CUENTO = {
           "#escena_03 .nota7Esc03",
           "#escena_03 .nota8Esc03",
           "#escena_03 .nota9Esc03",
-         /*  "#escena_03 .nota10Esc03",
+          "#escena_03 .nota10Esc03",
           "#escena_03 .nota11Esc03",
           "#escena_03 .nota12Esc03",
           "#escena_03 .nota13Esc03",
@@ -1036,23 +1109,24 @@ let JSON_CUENTO = {
           "#escena_03 .nota18Esc03",
           "#escena_03 .nota19Esc03",
           "#escena_03 .nota20Esc03",
-          "#escena_03 .nota21Esc03", */
+          "#escena_03 .nota21Esc03", 
         ]
-         
+        */
         ANIM.anim_interact_flautistaTocandoRatas = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('inicio')
           //Sonido Flautista
-          .addCallback(function(){
+          /* .addCallback(function(){
             Player.playSoundFX('copia_de_musica_flauta_magica');
             Player.cambiaVolume('copia_de_musica_flauta_magica', 0.4);    
-          }, "-=15")
+          }, "-=15") */
           //Animacion Flautista
-          .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15")
+         /*  .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15") */
           .addCallback(function(){
             Player.playSoundFX('rio');
-            Player.cambiaVolume('rio', 0.9);    
-          }, 0)
+            //Player.cambiaVolume('rio', 0.9);  
+            ANIM.fadeVolume('rio',1,0,17);  
+          }, "-=30")
           //Animacion de ratas:
           /////////////////////
           //Ratas Cafes
@@ -1326,12 +1400,12 @@ let JSON_CUENTO = {
           .to("#escena_03 .rataNegraMuerte07Esc03", 6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 7.6)
           
           //Curva y Animacion Notas Musicales
-          for(let i=0; i<notasMusicales.length;i++){
+          /* for(let i=0; i<notasMusicales.length;i++){
             ANIM.anim_interact_flautistaTocandoRatas
               .set(notasMusicales[i], { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.5*i)
               .to(notasMusicales[i], 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 1.5*i)
               .to(notasMusicales[i], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 1.5*i)
-          }
+          } */
           ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('final')
         /* .addLabel('inicio')
