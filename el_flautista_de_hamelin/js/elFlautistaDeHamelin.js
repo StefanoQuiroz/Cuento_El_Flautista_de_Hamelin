@@ -72,6 +72,10 @@ let JSON_CUENTO = {
         url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica.mp3',
       },
       {
+        nombre: 'copia_de_musica_flauta_magica_Esc06',
+        url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_Esc06.mp3',
+      },
+      {
         nombre: 'copia_de_musica_flauta_magica_esc_08',
         url: 'audio/elFlautistaDeHamelin/fx/copia_de_musica_flauta_magica_esc_08.mp3',
       },
@@ -282,7 +286,7 @@ let JSON_CUENTO = {
           },
           {
             texto: 'El último niño, que era muy pequeño, no alcanzó a entrar <br> y pudo volver hasta el pueblo a contar a todos lo sucedido.',
-            tiempo: [12.1, 20.3, 0.5]// 20.3 => 12.9
+            tiempo: [12.1, 20.3, 5]// 20.3 => 12.9
           }
         ],
       },
@@ -610,15 +614,12 @@ let JSON_CUENTO = {
             })
         ANIM.main_tl.add(preAnimacion7_3, '6_3+=0');
 
-       
-
-
-        
+              
         ANIM.main_tl.addLabel('0_0_audio', 'escena_0+=0.1');
-        ANIM.main_tl.addLabel('0_0_audio_fade', '0_1-=3');
+        ANIM.main_tl.addLabel('0_0_audio_fade', '0_0-=2');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
-            Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.3);
+            //Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.3);
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
             ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',1,0,2);
@@ -732,7 +733,9 @@ let JSON_CUENTO = {
             Player.activaBtnSiguiente();
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
-           
+            Player.playSoundFX('copia_de_musica_flauta_magica_Esc06');
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc06',1,0,44);
+            //Player.cambiaVolume('copia_de_musica_flauta_magica_Esc06', 0.3);
         }, "fin_escena_5");
         
         
@@ -747,6 +750,9 @@ let JSON_CUENTO = {
             Player.activaBtnSiguiente();
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
+            Player.playSoundFX('copia_de_copia_de_musica_flauta_magica');
+            ANIM.fadeVolume('copia_de_copia_de_musica_flauta_magica',1,0,30);
+            //Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.3);
             
         }, "fin_escena_6");
         
@@ -1547,10 +1553,6 @@ let JSON_CUENTO = {
         ANIM.anim_interact_tropaNinios = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_tropaNinios
             .addLabel('inicio')
-            .addCallback(function(){
-              Player.playSoundFX('copia_de_musica_flauta_magica');
-              Player.cambiaVolume('copia_de_musica_flauta_magica', 0.4);    
-            },0)
 
             .addCallback(function(){
               Player.playSoundFX('niño_durmiendo_1');
@@ -1890,10 +1892,10 @@ let JSON_CUENTO = {
             Player.playSoundFX('cueva_magica');
             Player.cambiaVolume('cueva_magica', 0.3); 
           },0)
-          .addCallback(function(){
+          /* .addCallback(function(){
             Player.playSoundFX('copia_de_copia_de_musica_flauta_magica');
             Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.5); 
-          },0.8)
+          },0.8) */
           .fromTo('#escena_06 .flautistaEsc06',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat: 11}, 0)
           .from("#escena_06 .buhoOjosEsc06",0.1,{autoAlpha:1, delay:1.0, immediateRender:false},7)
           .from("#escena_06 .buhoOjosEsc06",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},7)
