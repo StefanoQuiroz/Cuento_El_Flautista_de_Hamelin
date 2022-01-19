@@ -294,7 +294,7 @@ let JSON_CUENTO = {
           },
           {
             texto: 'El último niño, que era muy pequeño, no alcanzó a entrar <br> y pudo volver hasta el pueblo a contar a todos lo sucedido.',
-            tiempo: [12.1, 20.3, 5]// 20.3 => 12.9
+            tiempo: [12.1, 20.3, 0.5]// 20.3 => 12.9
           }
         ],
       },
@@ -387,7 +387,7 @@ let JSON_CUENTO = {
       }
       ANIM[`wait_sound_${cual}`].play(0);
     },
-    //paussar sonido de espera
+    
     pauseWaitSound: () => {
       ANIM.arrWaitSounds.map((item, i) => {
         item.pause();
@@ -405,27 +405,8 @@ let JSON_CUENTO = {
           
         Player.creaMainTL();
 
-
-        /* Escena00 */
-        //ANIM.main_tl.add(TweenMax.set("escena_01 .casaEsc1", {scale:1, x:0, y:0}), 'escena_0+=0.01')
         let preAnimacion1 = new TimelineMax();
         preAnimacion1
-            //RATA 1
-            /* .from('#escena_00 .rata1OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1}) */
-            /* .set("#escena_00 .rata1ColaEsc00", {transformOrigin:"center top",repeat:-1})
-            .to('#escena_00 .rata1ColaEsc00', 2, {rotation:-20, ease:"wiggle",yoyo:true,repeat:-1}) */
-            //RATA 2
-            /* .fromTo('#escena_00 .rata2Esc00',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-            .set("#escena_00 .rata2ColaEsc00", {transformOrigin:"center bottom"},0)
-            .to('#escena_00 .rata2ColaEsc00', 2, {rotation:8, ease:"wiggle",yoyo:true,repeat:-1},0) */
-            //RATA 3
-            /* .from('#escena_00 .rata3OjoEsc00', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0)
-            .to('#escena_00 .rata3ColaEsc00', 2, {rotation:165, ease:"wiggle",yoyo:true,repeat:-1},0) */
-            //RATA 4
-            /* .from('#escena_00 .rata4OjoEsc00', 1, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:-1},0) */
-
-           /*  .to('#escena_00 .rata4ColaEsc00', 2, {rotation:-65, ease:"wiggle",yoyo:true,repeat:-1},0)   */
-           
           
         ANIM.main_tl.add(preAnimacion1,'0_0-=0');
 
@@ -434,24 +415,18 @@ let JSON_CUENTO = {
             //RATA 1
             .from('#escena_00 .rata1OjoEsc00', 1.3, {duration:2, ease: Power4.easeOut,repeat:-1}, 0)
             .to('#escena_00 .rata1ColaEsc00', 2, {rotation:-20, ease:"wiggle",yoyo:true,repeat:-1}, 0)
-            
             .set("#escena_00 .rata1CabezaEsc00", {autoAlpha:1})
             .set("#escena_00 .rata1CuerpoEsc00", {autoAlpha:1})
             .set("#escena_00 .rata1ColaEsc00", {autoAlpha:1, transformOrigin:"center top",repeat:-1})
-            //.set("#escena_00 .rata1ColaEsc00", {autoAlpha:1})
-          
             //RATA 2
             .fromTo('#escena_00 .rata2Esc00',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .set("#escena_00 .rata2ColaEsc00", {transformOrigin:"center bottom"},0)
             .to('#escena_00 .rata2ColaEsc00', 2, {rotation:8, ease:"wiggle",yoyo:true,repeat:-1},0)
-
             .set("#escena_00 .rata2Esc00", {autoAlpha:1})
             .set("#escena_00 .rata2ColaEsc00", {autoAlpha:1})
-           
             //RATA 3
             .from('#escena_00 .rata3OjoEsc00', 1.3, {duration:2, ease: Power4.easeOut,repeat:-1},0)
             .to('#escena_00 .rata3ColaEsc00', 2, {rotation:165, ease:"wiggle",yoyo:true,repeat:-1},0)
-            
             .set("#escena_00 .rata3CabezaEsc00", {autoAlpha:1})
             .set("#escena_00 .rata3OjoEsc00", {autoAlpha:1})
             .set("#escena_00 .rata3CuerpoEsc00", {autoAlpha:1})
@@ -461,17 +436,8 @@ let JSON_CUENTO = {
             .set("#escena_00 .rata4CabezaEsc00", {autoAlpha:1})
             .set("#escena_00 .rata4CuerpoEsc00", {autoAlpha:1})
             .set("#escena_00 .rata4OjoEsc00", {autoAlpha:1})
-            .set("#escena_00 .rata4ColaEsc00", {autoAlpha:1})
-          
-
-           /*  .to('#escena_00 .rata4ColaEsc00', 2, {rotation:-65, ease:"wiggle",yoyo:true,repeat:-1},0)   */
-           
-          
+            .set("#escena_00 .rata4ColaEsc00", {autoAlpha:1}) 
         ANIM.main_tl.add(preAnimacion1_2, '0_2-=1');
-
-
-
-
         /* Escena01 */
         let preAnimacion2 = new TimelineMax();
         preAnimacion2
@@ -489,15 +455,8 @@ let JSON_CUENTO = {
             .to('#escena_01 .rata1ColaEsc01', 1.5, {rotation:13, ease:"wiggle",yoyo:true,repeat:-1}) 
             //RATA 2
             .to('#escena_01 .rata2OjoEsc01', 1.3, {autoAlpha:1, duration:.3,ease: Power4.easeOut ,repeat:4}, 0.3)
-            
-            
-            
-
         ANIM.main_tl.add(preAnimacion2, '1_0-=0');
-
-        
         /* Escena02*/
-
         let preAnimacion3_1 = new TimelineMax();
         preAnimacion3_1
             .fromTo('#escena_02 .ratonNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
@@ -505,13 +464,6 @@ let JSON_CUENTO = {
             .fromTo('#escena_02 .ratonesEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonTejadoNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonTejadoCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-
-            /* .fromTo('#escena_02 .ratonNegroEsc02', 1, {backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', y:-100, ease:Elastic.easeOut.config(1, 0.2), opacity: 1}, 1)
-            //solucionar un big cuando se desea regresar no ejecuta ese sprint correctamente
-            .fromTo('#escena_03 .loboEsc4',0.8,{backgroundPosition:'200% 0%', opacity:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1), repeat:2}, 2)
-            .to('#escena_03 .loboEsc4', 2.1,{x:920, ease:Linear.easeNone}, 2.01)
-            //.to('#escena_03 .loboEsc4',0.1, {backgroundPosition:'100% 0%', opacity:0}, "-=0")
-            .to('#escena_03 .loboEsc4',0.1,{backgroundPosition:'500% 0%', ease: SteppedEase.config(1)},"-=0") */
         ANIM.main_tl.add(preAnimacion3_1, '2_0-=0');
 
         let preAnimacion3_2 = new TimelineMax();
@@ -522,17 +474,6 @@ let JSON_CUENTO = {
             .fromTo('#escena_02 .ratonTejadoNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonTejadoCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
         ANIM.main_tl.add(preAnimacion3_2);
-
-        /* let preAnimacion3_1 = new TimelineMax();
-        preAnimacion3_1
-            .fromTo('#escena_02 .ratonNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-            .fromTo('#escena_02 .ratonCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-            .fromTo('#escena_02 .ratonesEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-            .fromTo('#escena_02 .ratonTejadoNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-            .fromTo('#escena_02 .ratonTejadoCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
-        ANIM.main_tl.add(preAnimacion3_1, '2_2-=0'); */
-
-        
 
         /* Escena 04 */
         var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
@@ -586,7 +527,6 @@ let JSON_CUENTO = {
           .addCallback(function(){
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc04');
             ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,32);
-            //Player.cambiaVolume('copia_de_musica_flauta_magica', 0.4);    
           }, "-=15")
 
           .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15")
@@ -611,14 +551,9 @@ let JSON_CUENTO = {
                 each: 0.5,
                 repeat: -1,
               }})
-              //.from("#escena_04 .flautistaCuerpoEsc05",1.5,{backgroundPosition:'0% 0%', ease: Power4.easeOut, ease: SteppedEase.config(0)},0)
-            //.from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0,duration:3, ease: Power4.easeOut,repeat:-1},0)
-
         ANIM.main_tl.add(preAnimacion5, '4_0+=0');
 
-
         /* Escena 08 */
-
         let preAnimacion8 = new TimelineMax({repeat:-1});
         preAnimacion8
             .to("#escena_07 .nube1Esc07",35,{x:1400,yoyo:true},0)
@@ -632,23 +567,7 @@ let JSON_CUENTO = {
               }})
 
         ANIM.main_tl.add(preAnimacion8, '7_0+=0');
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
         /* Escena 06 */
         let preAnimacion7_0 = new TimelineMax();
         preAnimacion7_0
@@ -717,11 +636,7 @@ let JSON_CUENTO = {
         ANIM.main_tl.addCallback(function () {
             ANIM.fadeVolume('copia_de_musica_flauta_magica_esc_08',1,0,2);
         }, "7_0_audio_fade");
-        
-        
-
-        
-
+ 
         /*INICIO*/
         /*LLAMADAS Y FUNCIONES ESCENA 0*/ //<-----------------------------------------------------
         ANIM.main_tl.addCallback(function () {
@@ -746,7 +661,6 @@ let JSON_CUENTO = {
             ANIM.main_tl.pause();
             Player.activaBtnSiguiente();
             ANIM.interactividad(1);
-            //ANIM.interactividad(1,undefined,'secundario');
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
             Player.playSoundFX('publico_disgustado_copia');
@@ -766,7 +680,6 @@ let JSON_CUENTO = {
             Player.resetSubtitulos();
         }, "fin_escena_2");
         
-       
         /*LLAMADAS Y FUNCIONES ESCENA 3*/ //<-----------------------------------------------------
         ANIM.main_tl.addCallback(function (){ 
             Player.hideOthersBut('escena_03');
@@ -780,7 +693,6 @@ let JSON_CUENTO = {
             Player.resetSubtitulos();
         }, "fin_escena_3");
         
-        
         /*LLAMADAS Y FUNCIONES ESCENA 4*/ //<-----------------------------------------------------
         ANIM.main_tl.addCallback(function () {
             Player.hideOthersBut('escena_04');
@@ -793,7 +705,6 @@ let JSON_CUENTO = {
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
         }, "fin_escena_4");
-        
         
         /*LLAMADAS Y FUNCIONES ESCENA 5*/ //<-----------------------------------------------------
         ANIM.main_tl.addCallback(function () {
@@ -811,7 +722,6 @@ let JSON_CUENTO = {
             //Player.cambiaVolume('copia_de_musica_flauta_magica_Esc06', 0.3);
         }, "fin_escena_5");
         
-        
         /*LLAMADAS Y FUNCIONES ESCENA 6*/ //<-----------------------------------------------------
         ANIM.main_tl.addCallback(function () {
             Player.hideOthersBut('escena_06');
@@ -825,8 +735,6 @@ let JSON_CUENTO = {
             Player.resetSubtitulos();
             Player.playSoundFX('copia_de_copia_de_musica_flauta_magica');
             ANIM.fadeVolume('copia_de_copia_de_musica_flauta_magica',1,0,30);
-            //Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.3);
-            
         }, "fin_escena_6");
         
         /*LLAMADAS Y FUNCIONES ESCENA 7*/ //<-----------------------------------------------------
@@ -872,8 +780,6 @@ let JSON_CUENTO = {
         ANIM.anim_interact_ciudad.pause();
   
         /********ESCENA 01 *********/
-
-
         const ciudadanosArray = [
           '#escena_01 .pinochoEsc01',
           '#escena_01 .monjaEsc01',
@@ -886,11 +792,9 @@ let JSON_CUENTO = {
           '#escena_01 .chicoAzulEsc01',
         ]
 
-
         ANIM.anim_interact_ciudadFuriosa = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_ciudadFuriosa
             .addLabel('inicio')
-            
             .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:1.0, immediateRender:false},0)
             .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},0)
             .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:3.0, immediateRender:false},0)
@@ -933,9 +837,6 @@ let JSON_CUENTO = {
             .from("#escena_01 .rata2OjoEsc01",0.5,{autoAlpha:1, delay:19.0, immediateRender:false},0)
             .from("#escena_01 .rata2OjoEsc01",1.0,{autoAlpha:0, delay:20.0, immediateRender:false},0) 
             
-            //.from('#escena_01 .rata1OjoEsc01', 1.3, {autoAlpha:1,duration:2, ease: Power4.easeOut,repeat:8},0)
-            //.to('#escena_01 .rata2OjoEsc01', 1.3, {autoAlpha:1, duration:0.3,ease: Power4.easeOut ,repeat:8}, 0)
-            
             .fromTo('#escena_01 .enojadaEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:5}, 0)
             .fromTo('#escena_01 .rojoEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:5},0)
 
@@ -967,11 +868,7 @@ let JSON_CUENTO = {
 
             .fromTo('#escena_01 .alcaldeEsc01',1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:7},7)
 
-
             .fromTo(ciudadanosArray,1.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:7},7.5)
-
-
-
             .addLabel('final');
         ANIM.anim_interact_ciudadFuriosa.pause(); 
     
@@ -1008,13 +905,8 @@ let JSON_CUENTO = {
             .fromTo(ratones,1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:12},0)
             .fromTo("#escena_02 .flautistaBrazoDerEsc02",0.8, {rotation:0},{rotation:5, y:-30,yoyo:true, ease: Power0.easeOut, repeat:8}, 0)
             .fromTo("#escena_02 .flautistaBrazoIzqEsc02",0.8,{rotation:0},{rotation:6, y:9, x:0,yoyo:true, ease: Power0.easeOut, repeat:8},0)
-            
-            /* .set("#escena_02 .plumaFlautista", {transformOrigin:"top bottom",repeat:-1},0)
-            .to('#escena_02 .plumaFlautista', 1.5, {rotation:-10, ease: Power0.easeOut,yoyo:true,repeat:-1},0) */
-
             .to('#escena_02 .plumaFlautista', 1,{rotation:8, y:-32,yoyo:true, ease: Power3.easeOut, repeat:5},0)
            
-
             .from(ojos,0.4,{autoAlpha:1, delay:1.0, immediateRender:false},0)
             .from(ojos,1.5,{autoAlpha:0, delay:2.0, immediateRender:false},0)
             .from(ojos,0.4,{autoAlpha:1, delay:3.0, immediateRender:false},0)
@@ -1022,7 +914,6 @@ let JSON_CUENTO = {
             .from(ojos,0.4,{autoAlpha:1, delay:5.0, immediateRender:false},0)
             .from(ojos,1.5,{autoAlpha:0, delay:6.0, immediateRender:false},0)
            
-
             .from("#escena_02 .flautistaBocaEsc02",0.4,{autoAlpha:1, delay:0.5, immediateRender:false},0)
             .from("#escena_02 .flautistaBocaEsc02",1.5,{autoAlpha:0, delay:1.0, immediateRender:false},0)
             .from("#escena_02 .flautistaBocaEsc02",0.4,{autoAlpha:1, delay:1.5, immediateRender:false},0)
@@ -1050,86 +941,14 @@ let JSON_CUENTO = {
             .addLabel('final')
         ANIM.anim_interact_flautista.pause();
 
-        /********ESCENA 03 *********/
-        //var bezierData = MorphSVGPlugin.pathDataToBezier("#motionPath");
-        //var motionPath = MorphSVGPlugin.pathDataToBezier('#escena_03 #pathNota', {align:"#escena_03 .nota1Esc03"}) ;
-        
-       
-
-        //var pathString = "M744.5,266.5c40.73,40.94,95.97,85.72,153,36c39-34,35-93-13-155c-60.16-77.7-209-100-273-21c-69.34,85.59,41,201-32,282c-60.46,67.09-285.74,120.05-333,11c-52-120,104-142,47-289c-22.93-59.14-135-97-222-64c-68.11,25.83-130.29,91.19-144,168";
-        //Paths alternativos
-        
-        //var pathString = "M 744.5 266.5 c 425 159 511 -76 -6 -235 c 0 0 -209 -100 -273 -21 c -69.34 85.59 -49 127 -69 260 c -160 455 -448 611 -371.5 -20.5 c 23 -120 104 -142 47 -289 c -22.93 -59.14 -135 -97 -222 -64 c -68.11 25.83 -130.29 91.19 -144 168";
-
-        /* var pathString = "M1079.339 467.64c90.371 184.09 123.844 224.253 317.975 160.658 16.735-66.942 13.388-107.106 10.041-97.066-63.596-80.329-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356"; */
-        
-        //Funcion que toma el SVG path y los convierte en un arreglo de coordendas (x,y) para la propiedad bezier (TweenMax 2.1.3)
-        /* var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
-
-        pathAlternativoRataNegra = "M-27.8 33.004 566.787 33.004 728.13 460.269"
-
-        var arrayPath = [];
-        var newPath = Snap.path.toCubic(pathString);
-
-        function setUpPoint(segment){
-          for(var i = 0; i < segment.length; i+=2){
-            var point = {};
-            point.x = segment[i];
-            point.y = segment[i+1];
-            arrayPath.push(point);
-          }
-        }
-
-        
-        for(var i = 0; i < newPath.length; i++){
-          var segment = newPath[i], pointt;
-          segment.shift();
-          pointt = setUpPoint(segment);
-        }  */
-        //console.log("array:", arrayPath);
-        /*
-        const notasMusicales = [
-          "#escena_03 .nota1Esc03",
-          "#escena_03 .nota2Esc03",
-          "#escena_03 .nota3Esc03",
-          "#escena_03 .nota4Esc03",
-          "#escena_03 .nota5Esc03",
-          "#escena_03 .nota6Esc03",
-          "#escena_03 .nota7Esc03",
-          "#escena_03 .nota8Esc03",
-          "#escena_03 .nota9Esc03",
-          "#escena_03 .nota10Esc03",
-          "#escena_03 .nota11Esc03",
-          "#escena_03 .nota12Esc03",
-          "#escena_03 .nota13Esc03",
-          "#escena_03 .nota14sc03",
-          "#escena_03 .nota15Esc03",
-          "#escena_03 .nota16Esc03",
-          "#escena_03 .nota17Esc03",
-          "#escena_03 .nota18Esc03",
-          "#escena_03 .nota19Esc03",
-          "#escena_03 .nota20Esc03",
-          "#escena_03 .nota21Esc03", 
-        ]
-        */
         ANIM.anim_interact_flautistaTocandoRatas = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('inicio')
-          //Sonido Flautista
-          /* .addCallback(function(){
-            Player.playSoundFX('copia_de_musica_flauta_magica');
-            Player.cambiaVolume('copia_de_musica_flauta_magica', 0.4);    
-          }, "-=15") */
-          //Animacion Flautista
-         /*  .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15") */
           .addCallback(function(){
-            Player.playSoundFX('rio');
-            //Player.cambiaVolume('rio', 0.9);  
+            Player.playSoundFX('rio'); 
             ANIM.fadeVolume('rio',1,0,17);  
           }, "-=30")
-          //Animacion de ratas:
-          /////////////////////
-          //Ratas Cafes
+    
           //Cafe01
           .set("#escena_03 .rataCafe01Esc03",{opacity:1, immediateRender:false}, 0)
           .fromTo("#escena_03 .rataCafe01Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 0)
@@ -1263,8 +1082,6 @@ let JSON_CUENTO = {
           .set("#escena_03 .rataCafeMuerte07Esc03", {opacity:1, immediateRender:false}, 8.3)
           .to("#escena_03 .rataCafeMuerte07Esc03", 6.5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 8.3)
 
-
- 
           //Ratas Negras
           //Negra01
           .set("#escena_03 .rataNegra01Esc03",{opacity:1, immediateRender:false}, 0)
@@ -1323,7 +1140,7 @@ let JSON_CUENTO = {
           .set("#escena_03 .rataNegraMuerte03Esc03", {opacity:1, immediateRender:false}, 6.1)
           .to("#escena_03 .rataNegraMuerte03Esc03", 5,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 6.1)
           
-           //Negra04 desp rataMuerta 5=>6
+           //Negra04 
           .set("#escena_03 .rataNegra04Esc03",{opacity:1, immediateRender:false}, 2.0)
           .fromTo("#escena_03 .rataNegra04Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 2.0)
           .to("#escena_03 .rataNegra04Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1114,y:173}], autoRotate:false}, ease:Linear.easeNone}, 2.0)
@@ -1399,131 +1216,10 @@ let JSON_CUENTO = {
           .set("#escena_03 .rataNegraMuerte07Esc03", {opacity:1, immediateRender:false}, 7.6)
           .to("#escena_03 .rataNegraMuerte07Esc03", 6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 7.6)
           
-          //Curva y Animacion Notas Musicales
-          /* for(let i=0; i<notasMusicales.length;i++){
-            ANIM.anim_interact_flautistaTocandoRatas
-              .set(notasMusicales[i], { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.5*i)
-              .to(notasMusicales[i], 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 1.5*i)
-              .to(notasMusicales[i], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 1.5*i)
-          } */
           ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('final')
-        /* .addLabel('inicio')
-         
-          
-          
-          .addLabel('final') */
-
-
-          //.set("#escena_03 .nota1Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          //.to("#escena_03 .nota1Esc03", 12.8, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 0)
-          //.addLabel('final');
-        /*
-        } */
-        //lo de abajo borrar
-          //.addLabel('inicio')
-          /* .set("#escena_03 .nota2Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          .to("#escena_03 .nota2Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, 0)
-
-          .set("#escena_03 .nota3Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 1)
-          .to("#escena_03 .nota3Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, 1)
-          
-          .set("#escena_03 .nota4Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 2)
-          .to("#escena_03 .nota4Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 2) */
-        
-          /* 
-          .set("#escena_03 .nota5Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota5Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-
-          .set("#escena_03 .nota6Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota6Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-          
-          .set("#escena_03 .nota7Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          .to("#escena_03 .nota7Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 0)
-
-          .set("#escena_03 .nota8Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota8Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-
-          .set("#escena_03 .nota9Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota9Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-          
-          .set("#escena_03 .nota10Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          .to("#escena_03 .nota10Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 0)
-
-          .set("#escena_03 .nota11Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota11Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-
-          .set("#escena_03 .nota12Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota12Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-          
-          .set("#escena_03 .nota13Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          .to("#escena_03 .nota13Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 0)
-
-          .set("#escena_03 .nota14Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota14Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-
-          .set("#escena_03 .nota15Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota15Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-          
-          .set("#escena_03 .nota16Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 0)
-          .to("#escena_03 .nota16Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 0)
-
-          .set("#escena_03 .nota17Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota17Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5")
-
-          .set("#escena_03 .nota18Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, "-=13.5")
-          .to("#escena_03 .nota18Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false, delay: 0.2},ease:Linear.easeNone}, "-=13.5") */
-
-        
-
-          
-          
-          /* .set("#escena_03 .nota1Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 6)
-          .to("#escena_03 .nota1Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, 6)
-          
-          .set("#escena_03 .nota1Esc03", { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, 9)
-          .to("#escena_03 .nota1Esc03", 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone},9) */
-          //
         ANIM.anim_interact_flautistaTocandoRatas.pause();
         
-       /*  ANIM.anim_interact_flautistaNotas = new TimelineMax(); // creo la interacción
-          for(let i=0; i<notasMusicales.length; i++){
-            ANIM.anim_interact_flautistaNotas
-            .set(notasMusicales[i], { xPercent: -50, yPercent: -50, autoAlpha:1, immediateRender: false}, i)
-            .to(notasMusicales[i], 15, {bezier:{type:"cubic", values:arrayPath,  autoRotate: false},ease:Linear.easeNone}, i)
-          }
-        ANIM.anim_interact_flautistaTocandoRatas.pause(); */
-           
-
-        ANIM.anim_interact_ratas = new TimelineMax(); // creo la interacción
-        ANIM.anim_interact_ratas
-          .addLabel('inicio')
-          
-          .addLabel('final')
-           /*  let ratas = 5;
-            for(let i=ratas-1; i>=0; i--){
-                let pos1=Math.floor((Math.random() * 100) + 1);
-                let delay=Math.random()*1.2;
-                //let speed=(Math.random() * 0.5) + 0.2;
-                droplet1= document.createElement("div");
-                droplet1.className = "spriteRataCafe_esc03 rataCafe01Esc03";
-                droplet1.style.left = pos1 + "%";
-
-                ANIM.anim_interact_ratas
-                .set(droplet1,{autoAlpha:1, delay:1.5, immediateRender:false}, 0)
-                .fromTo(droplet1,0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 30}, 0)
-                .to(droplet1,3,{ delay: delay, bezier:{curviness:0.3, 
-                  values:[
-                      {x:1000,y:450}, 
-                  ], 
-                  autoRotate:false}
-                  , ease:Linear.easeNone}, 0)
-                
-                document.getElementById("interact_03").appendChild(droplet1);
-                //document.getElementById("interact_03").appendChild(droplet2);
-            } */
-        ANIM.anim_interact_ratas.pause();
-    
         /********ESCENA 04 *********/
         ANIM.anim_interact_alcaldeMalo = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_alcaldeMalo
@@ -1553,7 +1249,6 @@ let JSON_CUENTO = {
             }})
 
             .to("#escena_04 .alcaldeBrazoMonedas_esc05",.7,{rotation:6, y:-35,yoyo:true, ease: Power0.easeOut, repeat:14},0)
-            //.from("#escena_04 .alcaldeOjosEsc05",1.2,{autoAlpha:1, ease: Power2.easeOut, repeat:6},0)
             .from("#escena_04 .alcaldeOjosEsc05",0.4,{autoAlpha:1, delay:1.0, immediateRender:false},0)
             .from("#escena_04 .alcaldeOjosEsc05",1.5,{autoAlpha:0, delay:2.0, immediateRender:false},0)
             .from("#escena_04 .alcaldeOjosEsc05",0.4,{autoAlpha:1, delay:3.0, immediateRender:false},0)
@@ -1564,12 +1259,8 @@ let JSON_CUENTO = {
             .from("#escena_04 .alcaldeOjosEsc05",1.5,{autoAlpha:0, delay:8.0, immediateRender:false},0)
             .from("#escena_04 .alcaldeOjosEsc05",0.4,{autoAlpha:1, delay:9.0, immediateRender:false},0)
             .from("#escena_04 .alcaldeOjosEsc05",1.5,{autoAlpha:0, delay:10.0, immediateRender:false},0)
-            
             .fromTo('#escena_04 .consejero1Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
             .fromTo('#escena_04 .consejero2Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
-            
-            //.fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'0% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1)}, 2)
-            //.set("#escena_04 .flautistaCuerpoEsc05", {autoAlpha:0, immediateRender:false}, 2)
             .fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'200% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1),repeat:1}, 2)
 
             .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:1.0, immediateRender:false},0)
@@ -1582,16 +1273,9 @@ let JSON_CUENTO = {
             .from("#escena_04 .flautistaOjosEsc05",1.8,{autoAlpha:0, delay:8.0, immediateRender:false},0)
             .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:9.0, immediateRender:false},0) 
             .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:10.0, immediateRender:false},0)
-
             .addLabel('final');    
         ANIM.anim_interact_alcaldeMalo.pause();
     
-
-        //const arrayNinos1y2 = ['#escena_05 .ninio1Esc05','#escena_05 .ninio2Esc05'];
-
-        //const arrayNinos3y4y5 = ['#escena_05 .ninio3Esc05','#escena_05 .ninio4Esc05','#escena_05 .ninio5Esc05'];
-
-       
         /********ESCENA 05 *********/
         const notasMusicalesPrimerPuente = [
           "#escena_05 .nota9Esc05",
@@ -1627,41 +1311,22 @@ let JSON_CUENTO = {
         ANIM.anim_interact_tropaNinios = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_tropaNinios
             .addLabel('inicio')
-
             .addCallback(function(){
               Player.playSoundFX('niño_durmiendo_1');
               Player.cambiaVolume('niño_durmiendo_1', 0.3);    
             },3.5)
-
             .addCallback(function(){
               Player.playSoundFX('niña_durmiendo_2');
               Player.cambiaVolume('niña_durmiendo_2', 0.3);    
             },8.0)
-           
             .addCallback(function(){
               Player.playSoundFX('niño_durmiendo_1');
               Player.cambiaVolume('niño_durmiendo_1', 0.3);    
             },17.8)
-
             .addCallback(function(){
               Player.playSoundFX('niña_durmiendo_2');
               Player.cambiaVolume('niña_durmiendo_2', 0.3);    
             },19.4)
-
-
-            //BLOQUE 1(PRIMER PUENTE) //
-            //Nota Musicales Puente
-            /* .set(notasMusicalesPrimerPuente[0], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 0)
-            .to(notasMusicalesPrimerPuente[0], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 0)
-            .set(notasMusicalesPrimerPuente[0], { autoAlpha:0}, 13)
-
-            .set(notasMusicalesPrimerPuente[1], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.12)
-            .to(notasMusicalesPrimerPuente[1], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 1.12)
-            .set(notasMusicalesPrimerPuente[1], { autoAlpha:0}, 13.7)
-
-            .set(notasMusicalesPrimerPuente[2], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 2.24)
-            .to(notasMusicalesPrimerPuente[2], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 2.24)
-            .set(notasMusicalesPrimerPuente[2], { autoAlpha:0}, 14.4) */
 
             for(let i=0; i<notasMusicalesPrimerPuente.length;i++){
               ANIM.anim_interact_tropaNinios
@@ -1669,22 +1334,6 @@ let JSON_CUENTO = {
                 .to(notasMusicalesPrimerPuente[i], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:55}, 1.12*i)
                 .set(notasMusicalesPrimerPuente[i], { autoAlpha:0}, 13+(i*0.7))
             }
-
-            /* for(let i=0; i<notasMusicalesPrimerPuente.length;i++){
-              ANIM.anim_interact_tropaNinios
-                .set(notasMusicalesPrimerPuente[i], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.12*i)
-            } */
-
-            /* for(let i=0; i<notasMusicalesPrimerPuente.length;i++){
-              ANIM.anim_interact_tropaNinios
-                .set(notasMusicalesPrimerPuente[i], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 1.12*i)
-                .to(notasMusicalesPrimerPuente[i], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:0}, 1.12*i)
-            }
-
-            for(let j=(notasMusicalesPrimerPuente.length)-1; j>=0; j--){
-              ANIM.anim_interact_tropaNinios
-                .set(notasMusicalesPrimerPuente[j], { autoAlpha:0, immediateRender: false, transformOrigin:"50% 50%"}, j)
-            } */
 
         ANIM.anim_interact_tropaNinios
             .fromTo('#escena_05 .flautistaEsc05',2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'300% 0%', ease: SteppedEase.config(3),repeat: 8},0)
@@ -1751,9 +1400,7 @@ let JSON_CUENTO = {
               autoRotate: false
             },}, 11)
 
-
             //BLOQUE 2(SEGUNDO PUENTE)//
-
             for(let i=0; i<notasMusicalesSegundoPuente.length;i++){
               ANIM.anim_interact_tropaNinios
                 .set(notasMusicalesSegundoPuente[i], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 17+(i*0.75))
@@ -1762,18 +1409,6 @@ let JSON_CUENTO = {
             }
               
         ANIM.anim_interact_tropaNinios
-          /* .set(notasMusicalesSegundoPuente[0], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 17.0)
-          .to(notasMusicalesSegundoPuente[0], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 17.0)
-          .set(notasMusicalesSegundoPuente[0], { autoAlpha:0}, 25.5)
-
-          .set(notasMusicalesSegundoPuente[1], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 17.75)
-          .to(notasMusicalesSegundoPuente[1], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 17.75)
-          .set(notasMusicalesSegundoPuente[1], { autoAlpha:0}, 26)
-
-          .set(notasMusicalesSegundoPuente[2], { autoAlpha:1, immediateRender: false, transformOrigin:"50% 50%"}, 18.50)
-          .to(notasMusicalesSegundoPuente[2], 0.3, {rotation: 40, yoyo:true, transformOrigin: "center", ease: Power0.easeNone,repeat:-1}, 18.50)
-          .set(notasMusicalesSegundoPuente[2], { autoAlpha:0}, 26.5) */
-
             .fromTo('#escena_05 .flautistaEsc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'300% 0%', ease: SteppedEase.config(3),repeat:6},17)
             .to('#escena_05 .flautistaEsc05B',22,{bezier: {
               type: "thru",
@@ -1782,7 +1417,6 @@ let JSON_CUENTO = {
                 /*p2*/ { x: -1200, y: 10 }, { x: -1600, y: 30 },{ x: -2800, y: 30 } ],
                  autoRotate: false
             },},17)
-
 
             .fromTo('#escena_05 .ninio1Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:6},17.8)
             .to('#escena_05 .ninio1Esc05B',22,{bezier: {
@@ -1793,7 +1427,6 @@ let JSON_CUENTO = {
                 autoRotate: false
             },},17.8)
 
-
             .fromTo('#escena_05 .ninio2Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:8},18.6)
             .to('#escena_05 .ninio2Esc05B',22,{bezier: {
               type: "thru",
@@ -1802,7 +1435,6 @@ let JSON_CUENTO = {
                      { x: -1150, y: -110 }, { x: -1200, y: -80 },{ x: -2800, y: 25 }],
                 autoRotate: false
             },},18.6)
-
 
             .fromTo('#escena_05 .ninio3Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:8},19.4)
             .to('#escena_05 .ninio3Esc05B',22,{bezier: {
@@ -1813,7 +1445,6 @@ let JSON_CUENTO = {
                 autoRotate: false
             },},19.4)
 
-
             .fromTo('#escena_05 .ninio4Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:8},20)
             .to('#escena_05 .ninio4Esc05B',22,{bezier: {
               type: "thru",
@@ -1822,7 +1453,6 @@ let JSON_CUENTO = {
                      { x: -1150, y: -110 }, { x: -1200, y: -80 },{ x: -2800, y: 25 }],
                 autoRotate: false
             },},20)
-
 
             .fromTo('#escena_05 .ninio5Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:8},20.6)
             .to('#escena_05 .ninio5Esc05B',22,{bezier: {
@@ -1833,7 +1463,6 @@ let JSON_CUENTO = {
                 autoRotate: false
             },},20.6)
 
-
             .fromTo('#escena_05 .ninio6Esc05B',2.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4),repeat:8},24)
             .to('#escena_05 .ninio6Esc05B',20.5,{bezier: {
               type: "thru",
@@ -1842,15 +1471,11 @@ let JSON_CUENTO = {
                      { x: -1150, y: -110 }, { x: -1200, y: -80 },{ x: -2190, y: 25 }],
                 autoRotate: false
             },},24)
-
             .addLabel('final');
         ANIM.anim_interact_tropaNinios.pause();
 
 
         /********ESCENA 06 *********/
-                
-        //var pathStringEsc06 = "M1093.486 330.6c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
-
         var pathStringEsc06 = "M1049.28 325.535c-18.575 129.498 119.192 209.595 246.672 65.601 35.918-29.015-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.35";
 
         var arrayPathEsc06 = [];
@@ -1896,7 +1521,6 @@ let JSON_CUENTO = {
           //"#escena_06 .nota21Esc06",
         ]
         
-    
         const niniosCueva = [
           "#escena_06 .ninio1Esc06",
           "#escena_06 .ninio2Esc06",
@@ -1926,25 +1550,6 @@ let JSON_CUENTO = {
           .to(niniosCueva[i], 0.3,{opacity: 0}, (1.5*i)+5)
         }
 
-       /*  ANIM.anim_interact_niniosCueva
-          .set(niniosCueva[0], {autoAlpha:1, immediateRender: false}, 0)
-          .to(niniosCueva[0], 5,{x:1540, y:-220, ease:Linear.easeNone}, 0)
-          .fromTo(niniosCueva[0],1,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4), repeat: 5}, 0)
-          .to(niniosCueva[0], 0.3,{opacity: 0}, 5)
-
-          .set(niniosCueva[1], {autoAlpha:1, immediateRender: false}, 1.5)
-          .to(niniosCueva[1], 5,{x:1540, y:-220, ease:Linear.easeNone}, 1.5)
-          .fromTo(niniosCueva[1],1,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4), repeat: 5}, 1.5)
-          .to(niniosCueva[1], 0.3,{opacity: 0}, 6.5)
-
-          .set(niniosCueva[2], {autoAlpha:1, immediateRender: false}, 3)
-          .to(niniosCueva[2], 5,{x:1540, y:-220, ease:Linear.easeNone}, 3)
-          .fromTo(niniosCueva[2],1,{backgroundPosition:'0% 0%'},{backgroundPosition:'400% 0%', ease: SteppedEase.config(4), repeat: 5}, 3)
-          .to(niniosCueva[2], 0.3,{opacity: 0}, 8) */
-
-          /* ANIM.anim_interact_niniosCueva
-          .addLabel('inicio')
-          .addLabel('final'); */
         ANIM.anim_interact_niniosCueva.pause();
 
         ANIM.anim_interact_portalCueva = new TimelineMax({repeat: 5}); // creo la interacción
@@ -1966,10 +1571,7 @@ let JSON_CUENTO = {
             Player.playSoundFX('cueva_magica');
             Player.cambiaVolume('cueva_magica', 0.3); 
           },0)
-          /* .addCallback(function(){
-            Player.playSoundFX('copia_de_copia_de_musica_flauta_magica');
-            Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.5); 
-          },0.8) */
+
           .fromTo('#escena_06 .flautistaEsc06',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat: 11}, 0)
           .from("#escena_06 .buhoOjosEsc06",0.1,{autoAlpha:1, delay:1.0, immediateRender:false},7)
           .from("#escena_06 .buhoOjosEsc06",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},7)
@@ -1987,12 +1589,7 @@ let JSON_CUENTO = {
           .addLabel('final');
         ANIM.anim_interact_flautistaCueva.pause();
 
-
-
         /********ESCENA 07 *********/
-
-        //const ojosPuente = ['#escena_07 .ojosNinia1Esc07','#escena_07 .locoOjosEsc07','#escena_07 .mujerOjosEsc07','#escena_07 .cojoOjosEsc07',];
-
         const abrazos1 = ['#escena_07 .abrazo4Esc07','#escena_07 .abrazo5Esc07'];
 
         const abrazos2 = ['#escena_07 .abrazo1Esc07','#escena_07 .abrazo3Esc07'];
@@ -2008,15 +1605,11 @@ let JSON_CUENTO = {
             stagger: {
               each: 0.5,
             }})
-          //.from(ojosPuente,0.6,{autoAlpha:1, delay:1.0, immediateRender:false, repeat:9},0)
           .fromTo(abrazos1,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0)
           .fromTo(abrazos2,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0.4)
           .fromTo('#escena_07 .abrazo2Esc07',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:7}, 0.8)          
           .addLabel('final');
          ANIM.anim_interact_reencuentro.pause();
-    
-    
-    
     
         //Array de anin interacts
         ANIM.arr_interacts = [
@@ -2024,21 +1617,13 @@ let JSON_CUENTO = {
             ANIM.anim_interact_ciudadFuriosa,
             ANIM.anim_interact_flautista,
             ANIM.anim_interact_flautistaTocandoRatas,
-            ANIM.anim_interact_flautistaNotas,
-            ANIM.anim_interact_ratas,
-
-
-
             ANIM.anim_interact_alcaldeMalo,
             ANIM.anim_interact_tropaNinios,
             ANIM.anim_interact_tropaNinios2,
             ANIM.anim_interact_niniosCueva,
             ANIM.anim_interact_portalCueva,
             ANIM.anim_interact_flautistaCueva,
-
             ANIM.anim_interact_reencuentro,
-
-           
         ];
 
       
@@ -2047,7 +1632,6 @@ let JSON_CUENTO = {
     
         pausaInteractividad: () => {
         ANIM.arr_interacts.map((anim) => {
-            // y como la interacción está acá las pauso todas al mismo tiempo a voluntad
             anim.pause();
             anim.eventCallback('onComplete', null); //<--- para matar los eventos de onComplete para evitar que muestren los botones en otra escenas
         });
@@ -2055,17 +1639,6 @@ let JSON_CUENTO = {
         ANIM.setIniciales();
         },
         setIniciales:() => {
-            //estado inicial
-            //TweenMax.killTweensOf("#escena_00 .stuff");
-            //TweenMax.set('#escena_00 .interact',{scale:1, transformOrigin:'1280px 395px'});
-            
-            /* for(let i=0; i<notasMusicales.length;i++){
-              TweenMax.set(notasMusicales[i], {opacity:0})
-            } */
-            TweenMax.set('#escena_04 .casaMaderaEsc5',{backgroundPosition:'0% 0%'});
-            TweenMax.set('#escena_05 .loboEsc6',{opacity: 1})
-            TweenMax.set('#escena_05 .loboJadea',{opacity:0});
-            TweenMax.to('#escena_07 .loboEsc8',{backgroundPosition:'100% 0%', opacity:0});
             ANIM.pauseWaitSound();
             ANIM.pauseAnimaciones();
             $('.indicador_interactividad').css({'display':'none'});
@@ -2144,21 +1717,6 @@ let JSON_CUENTO = {
                         ANIM.anim_interact_flautistaTocandoRatas.play(0);
                     });
                 }
-                if(btn.hasClass('primario')){
-                  btn.click(function(){
-                      $(this).css({"display":"none"});
-                      ANIM.anim_interact_flautistaNotas.eventCallback("onComplete", muestralo, [$(this), cb]);   
-                      ANIM.anim_interact_flautistaNotas.play(0);
-                  });
-                }
-                if(btn.hasClass('primario')){
-                  btn.click(function(){
-                      $(this).css({"display":"none"});
-                      ANIM.anim_interact_ratas.eventCallback("onComplete", muestralo, [$(this), cb]);   
-                      ANIM.anim_interact_ratas.play(0);
-                  });
-                  }
-                
             break;
     
             case 4:
