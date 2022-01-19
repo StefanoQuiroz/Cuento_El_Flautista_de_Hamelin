@@ -675,8 +675,8 @@ let JSON_CUENTO = {
             //ANIM.interactividad(1,undefined,'secundario');
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
-            //Player.playSoundFX('paso_tiempo');
-            //Player.cambiaVolume('paso_tiempo', 0.2);
+            Player.playSoundFX('publico_disgustado_copia');
+            Player.cambiaVolume('publico_disgustado_copia', 0.5);
         }, "fin_escena_1");
         
         /*LLAMADAS Y FUNCIONES ESCENA 2*/ //<-----------------------------------------------------
@@ -811,10 +811,6 @@ let JSON_CUENTO = {
         ANIM.anim_interact_ciudadFuriosa = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_ciudadFuriosa
             .addLabel('inicio')
-            .addCallback(function(){
-              Player.playSoundFX('publico_disgustado_copia');
-              Player.cambiaVolume('publico_disgustado_copia', 0.7); 
-            },0)
             
             .from("#escena_01 .rata1OjoEsc01",0.5,{autoAlpha:1, delay:1.0, immediateRender:false},0)
             .from("#escena_01 .rata1OjoEsc01",1.0,{autoAlpha:0, delay:2.0, immediateRender:false},0)
