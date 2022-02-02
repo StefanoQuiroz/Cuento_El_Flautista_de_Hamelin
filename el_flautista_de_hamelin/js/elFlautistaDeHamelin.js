@@ -1511,11 +1511,11 @@ let JSON_CUENTO = {
               Player.cambiaVolume('flautista_desilucionado', 0.5); 
             },2.5)
 
-            .to("#escena_04 .nube1",13,{x:1400,yoyo:true, duration: 1.5},0)
-            .to("#escena_04 .nube2",13,{x:-1400,yoyo:true, duration: 1.5},0)
-            .to("#escena_04 .rayosDeSol",4,{opacity:0.5, scale:0.9, duration: 1.5},0)
-            .from("#escena_04 .rayosDeSol",3,{ scale: 1.05, 
-              duration: 1.5,
+            .to("#escena_04 .nube1",10,{x:1400,yoyo:true, duration: 1.1},0)
+            .to("#escena_04 .nube2",10,{x:-1400,yoyo:true, duration: 1.1},0)
+            .to("#escena_04 .rayosDeSol",3,{opacity:0.5, scale:0.9, duration: 1.5},0)
+            .from("#escena_04 .rayosDeSol",2,{ scale: 1.05, 
+              duration: 1.1,
               stagger: {
                 each: 0.5,
             }})
@@ -1533,7 +1533,7 @@ let JSON_CUENTO = {
             .from("#escena_04 .alcaldeOjosEsc05",1.5,{autoAlpha:0, delay:10.0, immediateRender:false},0)
             .fromTo('#escena_04 .consejero1Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
             .fromTo('#escena_04 .consejero2Esc05',.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:9}, 1)
-            .fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'200% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1),repeat:1}, 2)
+            .fromTo('#escena_04 .flautistaCuerpoEsc05',2,{backgroundPosition:'200% 0%', autoAlpha:1},{backgroundPosition:'100% 0%', ease: SteppedEase.config(1)}, 2)
 
             .from("#escena_04 .flautistaOjosEsc05",1.0,{autoAlpha:1, delay:1.0, immediateRender:false},0)
             .from("#escena_04 .flautistaOjosEsc05",1.5,{autoAlpha:0, delay:2.0, immediateRender:false},0)
