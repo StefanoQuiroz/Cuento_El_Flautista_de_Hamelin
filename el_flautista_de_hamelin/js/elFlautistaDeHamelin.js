@@ -3,21 +3,14 @@ let JSON_CUENTO = {
     nombre: 'El flautista de Hamelin',
     tipo: 'Cuento',
     descripcion:
-      '“El flautista de Hamelin” Narra la historia de un pueblo que se encuentra atestado de ratas, razón que desespera a todos sus habitantes. Un día aparece un joven que ofrece solucionar de una vez por todas la gran plaga de Hamelin, pero a cambio exige cierta compensación por su trabajo, el pueblo acepta, y el flautista con tres tonadas de su instrumento logra que todas las ratas se marchen del pueblo. El problema surge cuando el tacaño alcalde de Hamelin se reúsa pagar al joven la suma que le correspondía. Ahí es cuando el flautista decide tomar justicia por sus manos y reclamar la suma hipnotizando a los niños del pueblo y llevándolos hacia una cueva mágica, hasta recibir el pago prometido. Este relato es una adaptación libre basada en una leyenda popular alemana, atribuida a los hermanos Grimm en 1816. La leyenda registra un suceso oscuro, ocurrido en Alemania en 1284, donde se secuestraron a niños en el pueblo de Hamelin. La principal fuente que patenta este relato oral se encuentra en el vitral de la iglesia de Hamelin elaborado en el 1300 d.c. ',
+      '“El flautista de Hamelin” narra la historia de un pueblo que vive atestado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que un día aparece un joven flautista que promete solucionar de una vez por todas el problema, pero a cambio pide una bolsa con monedas de oro. <br> ¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento es una adaptación libre basada en una leyenda popular atribuida a los hermanos Grimm en 1816.',
     creditos: [
       ['Adaptación:', 'Copec'],
       ['Ilustraciones:', 'Copec'],
-      ['Narración:', 'Nicole Castillo Ramírez'],
-      ['Arreglos musicales:', 'Copec y Entrelíneas'],
-      [
-        'Edición a cargo de:',
-        'Copec',
-      ],
+      ['Narración:', 'Andrés Montero Labbé '],
+      ['Edición a cargo de:', 'Copec'],
       ['Montaje y desarrollo web:', 'Agencia Match'],
-      [
-        'Créditos de sonidos:',
-        "Revise detalles <a href='#' target='_blank'>aquí</a>",
-      ],
+      ['Créditos de sonidos y música', "Revise detalles <a href='#' target='_blank'>aquí</a>"],
     ],
     ID: 0,
     imagenes: [
@@ -526,10 +519,288 @@ let JSON_CUENTO = {
         preAnimacion4
           .addCallback(function(){
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc04');
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,32);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,29);
           }, "-=15")
 
-          .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=15")
+          .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=16")
+          .addCallback(function(){
+            Player.playSoundFX('rio');
+            Player.cambiaVolume('rio', 0.9);    
+          }, 0)
+
+           //Animacion de ratas:
+          /////////////////////
+          //Ratas Cafes
+          //Cafe01
+         
+          .set("#escena_03 .rataCafe01Esc03",{opacity:1, immediateRender:false}, 11)
+          .fromTo("#escena_03 .rataCafe01Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 11)
+          .to("#escena_03 .rataCafe01Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1000,y:450}], autoRotate:false}, ease:Linear.easeNone}, 11)
+          .set("#escena_03 .rataCafe01Esc03",{opacity:0, immediateRender:false}, 13.5)
+          .set("#escena_03 .rataCafeFlotador01Esc03", {opacity:1, immediateRender:false}, 13.5)
+          .to("#escena_03 .rataCafeFlotador01Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:170,y:-135}, {x:340,y:50}], autoRotate:false },ease:Linear.easeNone}, 13.5)
+          .fromTo("#escena_03 .rataCafeFlotador01Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 13.5)
+          .set("#escena_03 .rataCafeFlotador01Esc03", {opacity:0, immediateRender:false}, 14.7)
+          .set("#escena_03 .rataCafeSplash01Esc03", {opacity:1, immediateRender:false}, 14.7)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          }, 14.7)
+          .to("#escena_03 .rataCafeSplash01Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 14.9)
+          .set("#escena_03 .rataCafeSplash01Esc03", {opacity:0, immediateRender:false}, 15.4)
+          .set("#escena_03 .rataCafeMuerte01Esc03", {opacity:1, immediateRender:false}, 15.4)
+          .to("#escena_03 .rataCafeMuerte01Esc03", 5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 15.4)
+          
+          //Cafe02
+          .set("#escena_03 .rataCafe02Esc03",{opacity:1, immediateRender:false}, 11.7)
+          .fromTo("#escena_03 .rataCafe02Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 11.7)
+          .to("#escena_03 .rataCafe02Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:881,y:397}], autoRotate:false}, ease:Linear.easeNone}, 11.7)
+          .set("#escena_03 .rataCafe02Esc03",{opacity:0, immediateRender:false}, 14.2)
+          .set("#escena_03 .rataCafeFlotador02Esc03", {opacity:1, immediateRender:false}, 14.2)
+          .to("#escena_03 .rataCafeFlotador02Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:160,y:-135}, {x:320,y:50}], autoRotate:false },ease:Linear.easeNone}, 14.2)
+          .fromTo("#escena_03 .rataCafeFlotador02Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 14.2)
+          .set("#escena_03 .rataCafeFlotador02Esc03", {opacity:0, immediateRender:false}, 15.4)
+          .set("#escena_03 .rataCafeSplash02Esc03", {opacity:1, immediateRender:false}, 15.4)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },15.4)
+          .to("#escena_03 .rataCafeSplash02Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 15.6)
+          .set("#escena_03 .rataCafeSplash02Esc03", {opacity:0, immediateRender:false}, 16.1)
+          .set("#escena_03 .rataCafeMuerte02Esc03", {opacity:1, immediateRender:false}, 16.1)
+          .to("#escena_03 .rataCafeMuerte02Esc03", 5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 16.1)
+
+          //Cafe03
+          .set("#escena_03 .rataCafe03Esc03",{opacity:1, immediateRender:false}, 13.7)
+          .fromTo("#escena_03 .rataCafe03Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 13.7)
+          .to("#escena_03 .rataCafe03Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1000,y:401}], autoRotate:false}, ease:Linear.easeNone}, 13.7)
+          .set("#escena_03 .rataCafe03Esc03",{opacity:0, immediateRender:false}, 16.2)
+          .set("#escena_03 .rataCafeFlotador03Esc03", {opacity:1, immediateRender:false}, 16.2)
+          .to("#escena_03 .rataCafeFlotador03Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:200,y:-135}, {x:400,y:60}], autoRotate:false },ease:Linear.easeNone}, 16.2)
+          .fromTo("#escena_03 .rataCafeFlotador03Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},16.2)
+          .set("#escena_03 .rataCafeFlotador03Esc03", {opacity:0, immediateRender:false}, 17.4)
+          .set("#escena_03 .rataCafeSplash03Esc03", {opacity:1, immediateRender:false}, 17.4)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },17.4)
+          .to("#escena_03 .rataCafeSplash03Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 17.6)
+          .set("#escena_03 .rataCafeSplash03Esc03", {opacity:0, immediateRender:false}, 18.1)
+          .set("#escena_03 .rataCafeMuerte03Esc03", {opacity:1, immediateRender:false}, 18.1)
+          .to("#escena_03 .rataCafeMuerte03Esc03", 5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 18.1)
+
+          //Cafe04
+          .set("#escena_03 .rataCafe04Esc03",{opacity:1, immediateRender:false}, 13.9)
+          .fromTo("#escena_03 .rataCafe04Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 13.9)
+          .to("#escena_03 .rataCafe04Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:604,y:404}], autoRotate:false}, ease:Linear.easeNone}, 13.9)
+          .set("#escena_03 .rataCafe04Esc03",{opacity:0, immediateRender:false}, 16.4)
+          .set("#escena_03 .rataCafeFlotador04Esc03", {opacity:1, immediateRender:false}, 16.4)
+          .to("#escena_03 .rataCafeFlotador04Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:150,y:-135}, {x:300,y:90}], autoRotate:false },ease:Linear.easeNone}, 16.4)
+          .fromTo("#escena_03 .rataCafeFlotador04Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},16.4)
+          .set("#escena_03 .rataCafeFlotador04Esc03", {opacity:0, immediateRender:false}, 17.6)
+          .set("#escena_03 .rataCafeSplash04Esc03", {opacity:1, immediateRender:false}, 17.6)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },17.6)
+          .to("#escena_03 .rataCafeSplash04Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 17.8)
+          .set("#escena_03 .rataCafeSplash04Esc03", {opacity:0, immediateRender:false}, 18.3)
+          .set("#escena_03 .rataCafeMuerte04Esc03", {opacity:1, immediateRender:false}, 18.3)
+          .to("#escena_03 .rataCafeMuerte04Esc03", 6.5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 18.3)
+
+          //Cafe05
+          .set("#escena_03 .rataCafe05Esc03",{opacity:1, immediateRender:false}, 14.2)
+          .fromTo("#escena_03 .rataCafe05Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.2)
+          .to("#escena_03 .rataCafe05Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:401,y:415}], autoRotate:false}, ease:Linear.easeNone}, 14.2)
+          .set("#escena_03 .rataCafe05Esc03",{opacity:0, immediateRender:false}, 16.7)
+          .set("#escena_03 .rataCafeFlotador05Esc03", {opacity:1, immediateRender:false}, 16.7)
+          .to("#escena_03 .rataCafeFlotador05Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:120,y:-135}, {x:240,y:90}], autoRotate:false },ease:Linear.easeNone}, 16.7)
+          .fromTo("#escena_03 .rataCafeFlotador05Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},16.7)
+          .set("#escena_03 .rataCafeFlotador05Esc03", {opacity:0, immediateRender:false}, 17.9)
+          .set("#escena_03 .rataCafeSplash05Esc03", {opacity:1, immediateRender:false}, 17.9)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },17.9)
+          .to("#escena_03 .rataCafeSplash05Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.1)
+          .set("#escena_03 .rataCafeSplash05Esc03", {opacity:0, immediateRender:false}, 18.6)
+          .set("#escena_03 .rataCafeMuerte05Esc03", {opacity:1, immediateRender:false}, 18.6)
+          .to("#escena_03 .rataCafeMuerte05Esc03", 6.5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 18.6)
+         
+          //Cafe06
+          .set("#escena_03 .rataCafe06Esc03",{opacity:1, immediateRender:false}, 14.6)
+          .fromTo("#escena_03 .rataCafe06Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.6)
+          .to("#escena_03 .rataCafe06Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1060,y:397}], autoRotate:false}, ease:Linear.easeNone}, 14.6)
+          .set("#escena_03 .rataCafe06Esc03",{opacity:0, immediateRender:false}, 17.1)
+          .set("#escena_03 .rataCafeFlotador06Esc03", {opacity:1, immediateRender:false}, 17.1)
+          .to("#escena_03 .rataCafeFlotador06Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:220,y:-135}, {x:440,y:30}], autoRotate:false },ease:Linear.easeNone}, 17.1)
+          .fromTo("#escena_03 .rataCafeFlotador06Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},6.1)
+          .set("#escena_03 .rataCafeFlotador06Esc03", {opacity:0, immediateRender:false}, 18.3)
+          .set("#escena_03 .rataCafeSplash06Esc03", {opacity:1, immediateRender:false}, 18.3)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },18.3)
+          .to("#escena_03 .rataCafeSplash06Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.5)
+          .set("#escena_03 .rataCafeSplash06Esc03", {opacity:0, immediateRender:false}, 19.0)
+          .set("#escena_03 .rataCafeMuerte06Esc03", {opacity:1, immediateRender:false}, 19.0)
+          .to("#escena_03 .rataCafeMuerte06Esc03", 6.5,{ bezier:{curviness:0.3, values:[{x:570,y:-330}], autoRotate:false}, ease:Linear.easeNone}, 19.0)
+          
+          //Cafe07
+          .set("#escena_03 .rataCafe07Esc03",{opacity:1, immediateRender:false}, 14.9)
+          .fromTo("#escena_03 .rataCafe07Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.9)
+          .to("#escena_03 .rataCafe07Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1058,y:297}], autoRotate:false}, ease:Linear.easeNone}, 14.9)
+          .set("#escena_03 .rataCafe07Esc03",{opacity:0, immediateRender:false}, 17.4)
+          .set("#escena_03 .rataCafeFlotador07Esc03", {opacity:1, immediateRender:false}, 17.4)
+          .to("#escena_03 .rataCafeFlotador07Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:310,y:-135}, {x:620,y:-10}], autoRotate:false },ease:Linear.easeNone}, 17.4)
+          .fromTo("#escena_03 .rataCafeFlotador07Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},17.4)
+          .set("#escena_03 .rataCafeFlotador07Esc03", {opacity:0, immediateRender:false}, 18.6)
+          .set("#escena_03 .rataCafeSplash07Esc03", {opacity:1, immediateRender:false}, 18.6)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },18.6)
+          .to("#escena_03 .rataCafeSplash07Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.8)
+          .set("#escena_03 .rataCafeSplash07Esc03", {opacity:0, immediateRender:false}, 19.3)
+          .set("#escena_03 .rataCafeMuerte07Esc03", {opacity:1, immediateRender:false}, 19.3)
+          .to("#escena_03 .rataCafeMuerte07Esc03", 6.5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 19.3)
+
+
+ 
+          //Ratas Negras
+          //Negra01
+          .set("#escena_03 .rataNegra01Esc03",{opacity:1, immediateRender:false}, 11)
+          .fromTo("#escena_03 .rataNegra01Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 11)
+          .to("#escena_03 .rataNegra01Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:964,y:432}], autoRotate:false}, ease:Linear.easeNone}, 11)
+          .set("#escena_03 .rataNegra01Esc03",{opacity:0, immediateRender:false}, 13.5)
+          .set("#escena_03 .rataNegraSnorkel01Esc03", {opacity:1, immediateRender:false}, 13.7)
+          .to("#escena_03 .rataNegraSnorkel01Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:200,y:-135}, {x:400,y:90}], autoRotate:false },ease:Linear.easeNone}, 13.7)
+          .fromTo("#escena_03 .rataNegraSnorkel01Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 13.7)
+          .set("#escena_03 .rataNegraSnorkel01Esc03", {opacity:0, immediateRender:false}, 14.9)
+          .set("#escena_03 .rataNegraSplash01Esc03", {opacity:1, immediateRender:false}, 14.9)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          }, 14.9)
+          .to("#escena_03 .rataNegraSplash01Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 15.1)
+          .set("#escena_03 .rataNegraSplash01Esc03", {opacity:0, immediateRender:false}, 15.6)
+          .set("#escena_03 .rataNegraMuerte01Esc03", {opacity:1, immediateRender:false}, 15.6)
+          .to("#escena_03 .rataNegraMuerte01Esc03", 5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 15.6)
+          
+          //Negra02
+          .set("#escena_03 .rataNegra02Esc03",{opacity:1, immediateRender:false}, 12.4)
+          .fromTo("#escena_03 .rataNegra02Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 12.4)
+          .to("#escena_03 .rataNegra02Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:735,y:397}], autoRotate:false}, ease:Linear.easeNone}, 12.4)
+          .set("#escena_03 .rataNegra02Esc03",{opacity:0, immediateRender:false}, 14.9)
+          .set("#escena_03 .rataNegraSnorkel02Esc03", {opacity:1, immediateRender:false}, 14.9)
+          .to("#escena_03 .rataNegraSnorkel02Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:130,y:-135}, {x:260,y:90}], autoRotate:false },ease:Linear.easeNone}, 14.9)
+          .fromTo("#escena_03 .rataNegraSnorkel02Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},14.9)
+          .set("#escena_03 .rataNegraSnorkel02Esc03", {opacity:0, immediateRender:false}, 16.1)
+          .set("#escena_03 .rataNegraSplash02Esc03", {opacity:1, immediateRender:false}, 16.1)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },16.1)
+          .to("#escena_03 .rataNegraSplash02Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 16.3)
+          .set("#escena_03 .rataNegraSplash02Esc03", {opacity:0, immediateRender:false}, 16.8)
+          .set("#escena_03 .rataNegraMuerte02Esc03", {opacity:1, immediateRender:false}, 16.8)
+          .to("#escena_03 .rataNegraMuerte02Esc03", 5,{ bezier:{curviness:0.3, values:[{x:450,y:-292}], autoRotate:false}, ease:Linear.easeNone}, 16.8)
+          
+          //Negra03
+          .set("#escena_03 .rataNegra03Esc03",{opacity:1, immediateRender:false}, 12.7)
+          .fromTo("#escena_03 .rataNegra03Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 12.7)
+          .to("#escena_03 .rataNegra03Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:848,y:464}], autoRotate:false}, ease:Linear.easeNone}, 12.7)
+          .set("#escena_03 .rataNegra03Esc03",{opacity:0, immediateRender:false}, 15.2)
+          .set("#escena_03 .rataNegraSnorkel03Esc03", {opacity:1, immediateRender:false}, 15.2)
+          .to("#escena_03 .rataNegraSnorkel03Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:110,y:-135}, {x:220,y:70}], autoRotate:false },ease:Linear.easeNone}, 15.2)
+          .fromTo("#escena_03 .rataNegraSnorkel03Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},15.2)
+          .set("#escena_03 .rataNegraSnorkel03Esc03", {opacity:0, immediateRender:false}, 16.4)
+          .set("#escena_03 .rataNegraSplash03Esc03", {opacity:1, immediateRender:false}, 16.4)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },16.4)
+          .to("#escena_03 .rataNegraSplash03Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 16.6)
+          .set("#escena_03 .rataNegraSplash03Esc03", {opacity:0, immediateRender:false}, 17.1)
+          .set("#escena_03 .rataNegraMuerte03Esc03", {opacity:1, immediateRender:false}, 17.1)
+          .to("#escena_03 .rataNegraMuerte03Esc03", 5,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 17.1)
+        
+           //Negra04 desp rataMuerta 5=>6
+          .set("#escena_03 .rataNegra04Esc03",{opacity:1, immediateRender:false}, 13.0)
+          .fromTo("#escena_03 .rataNegra04Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 13.0)
+          .to("#escena_03 .rataNegra04Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1114,y:173}], autoRotate:false}, ease:Linear.easeNone}, 13.0)
+          .set("#escena_03 .rataNegra04Esc03",{opacity:0, immediateRender:false}, 15.5)
+          .set("#escena_03 .rataNegraSnorkel04Esc03", {opacity:1, immediateRender:false}, 15.5)
+          .to("#escena_03 .rataNegraSnorkel04Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:250,y:-135}, {x:500,y:35}], autoRotate:false },ease:Linear.easeNone}, 15.5)
+          .fromTo("#escena_03 .rataNegraSnorkel04Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)},15.5)
+          .set("#escena_03 .rataNegraSnorkel04Esc03", {opacity:0, immediateRender:false}, 16.7)
+          .set("#escena_03 .rataNegraSplash04Esc03", {opacity:1, immediateRender:false}, 16.7)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },16.7)
+          .to("#escena_03 .rataNegraSplash04Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 16.9)
+          .set("#escena_03 .rataNegraSplash04Esc03", {opacity:0, immediateRender:false}, 17.4)
+          .set("#escena_03 .rataNegraMuerte04Esc03", {opacity:1, immediateRender:false}, 17.414)
+          .to("#escena_03 .rataNegraMuerte04Esc03", 6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 17.4)
+
+          //Negra05
+          .set("#escena_03 .rataNegra05Esc03",{opacity:1, immediateRender:false}, 14.9)
+          .fromTo("#escena_03 .rataNegra05Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.9)
+          .to("#escena_03 .rataNegra05Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:1102,y:50}], autoRotate:false}, ease:Linear.easeNone}, 14.9)
+          .set("#escena_03 .rataNegra05Esc03",{opacity:0, immediateRender:false}, 17.4)
+          .set("#escena_03 .rataNegraSnorkel05Esc03", {opacity:1, immediateRender:false}, 17.4)
+          .to("#escena_03 .rataNegraSnorkel05Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:60,y:-135}, {x:120,y:140}], autoRotate:false },ease:Linear.easeNone}, 17.4)
+          .fromTo("#escena_03 .rataNegraSnorkel05Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 17.4)
+          .set("#escena_03 .rataNegraSnorkel05Esc03", {opacity:0, immediateRender:false}, 18.6)
+          .set("#escena_03 .rataNegraSplash05Esc03", {opacity:1, immediateRender:false}, 18.6)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5); 
+          },18.6)
+          .to("#escena_03 .rataNegraSplash05Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.8)
+          .set("#escena_03 .rataNegraSplash05Esc03", {opacity:0, immediateRender:false}, 19.3)
+          .set("#escena_03 .rataNegraMuerte05Esc03", {opacity:1, immediateRender:false}, 19.3)
+          .to("#escena_03 .rataNegraMuerte05Esc03", 6.6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 19.9)
+
+          //Negra06
+          .set("#escena_03 .rataNegra06Esc03",{opacity:1, immediateRender:false}, 14.9)
+          .fromTo("#escena_03 .rataNegra06Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.9)
+          .to("#escena_03 .rataNegra06Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:468,y:424}], autoRotate:false}, ease:Linear.easeNone}, 14.9)
+          .set("#escena_03 .rataNegra06Esc03",{opacity:0, immediateRender:false}, 17.4)
+          .set("#escena_03 .rataNegraSnorkel06Esc03", {opacity:1, immediateRender:false}, 17.4)
+          .to("#escena_03 .rataNegraSnorkel06Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:160,y:-135}, {x:320,y:90}], autoRotate:false },ease:Linear.easeNone}, 17.4)
+          .fromTo("#escena_03 .rataNegraSnorkel06Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 17.4)
+          .set("#escena_03 .rataNegraSnorkel06Esc03", {opacity:0, immediateRender:false}, 18.6)
+          .set("#escena_03 .rataNegraSplash06Esc03", {opacity:1, immediateRender:false}, 18.6)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },18.6)
+          .to("#escena_03 .rataNegraSplash06Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.8)
+          .set("#escena_03 .rataNegraSplash06Esc03", {opacity:0, immediateRender:false}, 19.3)
+          .set("#escena_03 .rataNegraMuerte06Esc03", {opacity:1, immediateRender:false}, 19.3)
+          .to("#escena_03 .rataNegraMuerte06Esc03", 6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 19.3)
+
+          //Negra07
+          .set("#escena_03 .rataNegra07Esc03",{opacity:1, immediateRender:false}, 14.2)
+          .fromTo("#escena_03 .rataNegra07Esc03",0.2,{backgroundPosition:'0% 0%'},{backgroundPosition:'-200% 0%', ease: SteppedEase.config(2), repeat: 12}, 14.2)
+          .to("#escena_03 .rataNegra07Esc03",2.5,{ bezier:{curviness:0.3, values:[{x:960,y:491}], autoRotate:false}, ease:Linear.easeNone}, 14.2)
+          .set("#escena_03 .rataNegra07Esc03",{opacity:0, immediateRender:false}, 16.7)
+          .set("#escena_03 .rataNegraSnorkel07Esc03", {opacity:1, immediateRender:false}, 16.7)
+          .to("#escena_03 .rataNegraSnorkel07Esc03", 1.2, {bezier:{type:"thru", values:[{x:0,y:0}, {x:300,y:-135}, {x:600,y:10}], autoRotate:false },ease:Linear.easeNone}, 16.7)
+          .fromTo("#escena_03 .rataNegraSnorkel07Esc03",1.5,{backgroundPosition:'-200% 0%'},{backgroundPosition:'-100% 0%', ease: SteppedEase.config(1)}, 16.7)
+          .set("#escena_03 .rataNegraSnorkel07Esc03", {opacity:0, immediateRender:false}, 17.9)
+          .set("#escena_03 .rataNegraSplash07Esc03", {opacity:1, immediateRender:false}, 17.9)
+          .addCallback(function(){
+            Player.playSoundFX('chapuzon_de_ratas');
+            Player.cambiaVolume('chapuzon_de_ratas', 0.5);    
+          },17.9)
+          .to("#escena_03 .rataNegraSplash07Esc03", 0.5, {scale: 1.8, opacity: 0.4}, 18.1)
+          .set("#escena_03 .rataNegraSplash07Esc03", {opacity:0, immediateRender:false}, 18.6)
+          .set("#escena_03 .rataNegraMuerte07Esc03", {opacity:1, immediateRender:false}, 18.6)
+          .to("#escena_03 .rataNegraMuerte07Esc03", 6,{ bezier:{curviness:0.3, values:[{x:560,y:-380}], autoRotate:false}, ease:Linear.easeNone}, 18.6)
+ 
 
           for(let i=0; i<notasMusicales.length;i++){
             preAnimacion4
@@ -539,7 +810,8 @@ let JSON_CUENTO = {
           } 
           
         ANIM.main_tl.add(preAnimacion4, '3_3-=0')
-        /* Escena 04 */
+
+        /* Escena 05 */
         let preAnimacion5 = new TimelineMax({repeat:-1});
         preAnimacion5
             .to("#escena_04 .nube1",35,{x:1400,yoyo:true},0)
@@ -687,7 +959,7 @@ let JSON_CUENTO = {
       
         ANIM.main_tl.addCallback(function () {
             ANIM.main_tl.pause();
-            ANIM.interactividad(3);
+            //ANIM.interactividad(3);
             Player.activaBtnSiguiente();
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
@@ -941,7 +1213,7 @@ let JSON_CUENTO = {
             .addLabel('final')
         ANIM.anim_interact_flautista.pause();
 
-        ANIM.anim_interact_flautistaTocandoRatas = new TimelineMax(); // creo la interacción
+        /* ANIM.anim_interact_flautistaTocandoRatas = new TimelineMax(); // creo la interacción
         ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('inicio')
           .addCallback(function(){
@@ -1218,7 +1490,7 @@ let JSON_CUENTO = {
           
           ANIM.anim_interact_flautistaTocandoRatas
           .addLabel('final')
-        ANIM.anim_interact_flautistaTocandoRatas.pause();
+        ANIM.anim_interact_flautistaTocandoRatas.pause(); */
         
         /********ESCENA 04 *********/
         ANIM.anim_interact_alcaldeMalo = new TimelineMax(); // creo la interacción
@@ -1616,7 +1888,7 @@ let JSON_CUENTO = {
             ANIM.anim_interact_ciudad,
             ANIM.anim_interact_ciudadFuriosa,
             ANIM.anim_interact_flautista,
-            ANIM.anim_interact_flautistaTocandoRatas,
+            //ANIM.anim_interact_flautistaTocandoRatas,
             ANIM.anim_interact_alcaldeMalo,
             ANIM.anim_interact_tropaNinios,
             ANIM.anim_interact_tropaNinios2,
@@ -1709,7 +1981,7 @@ let JSON_CUENTO = {
     
             break;
     
-            case 3:
+            /* case 3:
                 if(btn.hasClass('primario')){
                     btn.click(function(){
                         $(this).css({"display":"none"});
@@ -1717,7 +1989,7 @@ let JSON_CUENTO = {
                         ANIM.anim_interact_flautistaTocandoRatas.play(0);
                     });
                 }
-            break;
+            break; */
     
             case 4:
             if (btn.hasClass('primario')) {
