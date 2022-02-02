@@ -519,13 +519,13 @@ let JSON_CUENTO = {
         preAnimacion4
           .addCallback(function(){
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc04');
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,29);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc04',1,0,27);
           }, "-=15")
 
           .fromTo('#escena_03 .flautistaEsc03', 2.5,{backgroundPosition:'0% 0%'},{backgroundPosition:'600% 0%', ease: SteppedEase.config(6), repeat:8}, "-=16")
           .addCallback(function(){
             Player.playSoundFX('rio');
-            Player.cambiaVolume('rio', 0.9);    
+            Player.cambiaVolume('rio', 0.5);    
           }, 0)
 
            //Animacion de ratas:
