@@ -1862,6 +1862,8 @@ let JSON_CUENTO = {
         ANIM.anim_interact_flautistaCueva.pause();
 
         /********ESCENA 07 *********/
+        const ojosPuente = ['#escena_07 .ojosNinia1Esc07','#escena_07 .locoOjosEsc07','#escena_07 .mujerOjosEsc07','#escena_07 .cojoOjosEsc07',];
+
         const abrazos1 = ['#escena_07 .abrazo4Esc07','#escena_07 .abrazo5Esc07'];
 
         const abrazos2 = ['#escena_07 .abrazo1Esc07','#escena_07 .abrazo3Esc07'];
@@ -1877,6 +1879,7 @@ let JSON_CUENTO = {
             stagger: {
               each: 0.5,
             }})
+          .from(ojosPuente,0.9,{autoAlpha:1, delay:1.0, immediateRender:false, repeat:17},0)
           .fromTo(abrazos1,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0)
           .fromTo(abrazos2,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0.4)
           .fromTo('#escena_07 .abrazo2Esc07',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:7}, 0.8)          
