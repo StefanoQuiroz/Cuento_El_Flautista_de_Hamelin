@@ -1,0 +1,68 @@
+ESCENA 1
+
+Dejar un silencio de 3 segundos luego de “nada les faltaba”. ------> (CORREGIDO)
+
+Después de la narración que todo funcione tal como está pero agregar la música del principio en volumen medio-bajo, con las ratas chillando arriba. ------> (CORREGIDO)
+
+ 
+
+ESCENA 2
+
+Si se pudiera que cruce la rata de la escena 1 durante la narración de lado a lado para que no esté todo tan estático. ------> (CORREGIDO)
+
+Bocados de diálogo: ¡Hasta cuándo! va con tilde. ------> (CORREGIDO)
+
+Sonido de la gente del pueblo:
+
+Que el sonido de la gente quede en loop hasta el final. A partir de 2da interacción ya no funciona. ------> (CORREGIDO)
+
+Que las ratas suenen todo el tiempo mientras las personas alegan. ------> (CORREGIDO)
+
+Que al comenzar la interacción los gritos estén en volumen más “piola”, pero que cuando salgan los bocadillos se aumente el volumen. ------> (CORREGIDO)
+
+
+ESCENA 3
+
+Que suenen las ratas detrás de la narración. ------> (CORREGIDO)
+
+Que las exclamaciones del pueblo comiencen apenas termine la flauta y que suenen las ratas detrás. ------> (CORREGIDO)
+
+
+ESCENA 4
+
+Que se escuchen chillidos de ratas en segundo plano detrás de la narración. ------> (CORREGIDO)
+
+El sonido de la flauta debe quedar sonando al final en loop infinito. ------> (CORREGIDO)
+
+
+ESCENA 6
+
+Después de “dulcemente” que suenen algunas notas de la flauta. Luego que termine retomar la narración. ------> (CORREGIDO)
+
+Que al final la música quede sonando en loop infinito ( a partir de 2da interacción ya no suena la música) ------> (CORREGIDO)
+
+
+ESCENA 7
+
+Dar pausa de 3 segundos luego de cada una de las 3 oraciones de la narración. ------> (CORREGIDO)
+
+Que el búho pestañee cada 3 segundos durante la narración para dar algo de movimiento a la escena.  -----> (CORREGIDO)
+
+Si las estrellas pudieran titilar, mejor aún.  ------> (CORREGIDO)
+
+Que la música quede en loop hasta el final. ------> (CORREGIDO)
+
+
+ESCENA 8
+
+Que la música inicie tal como está pero sobre ruido de fondo de las voces del pueblo (sacar de escenas anteriores) ------> (CORREGIDO)
+
+El corte de la música antes de la narración está feo, demasiado abrupto. Debe ser paulatino con fade. ------> (CORREGIDO)
+
+Cuando dice “Los niños pudieron”, esa “L” inicial debe ir con minúscula en los subtítulos.  ------> (CORREGIDO)
+
+Si es posible, que el colorín colorado suene algo después de terminada la narración sobre la música y las voces del pueblo. -----> No se Puede Interrumpir la narración, luego de que finaliza el último subtítulo  "Y colorín colorado este cuento se ha acabado" recién se ejecuta la interacción
+
+La música debe quedar al final en loop infinito y que la interacción active las voces del pueblo solamente. ------> (CORREGIDO)
+
+Actualización de créditos en la portada (adjunto) ------> (CORREGIDO)
