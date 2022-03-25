@@ -311,7 +311,7 @@ let JSON_CUENTO = {
         parrafos: [
           {
             texto:'El alcalde y los vecinos, arrepentidos, <br> comprendieron que debían cumplir su palabra.',
-            tiempo: [0, 6.4, 10.0],
+            tiempo: [0, 6.4, 10.0]
           },
           {
             texto: 'Así lo hicieron, y después de un largo tiempo de dolor y angustia',
@@ -687,12 +687,12 @@ let JSON_CUENTO = {
 
           .addCallback(function () {
             Player.playSoundFX('voz_de_rata_1_copia');
-            ANIM.fadeVolume('voz_de_rata_1_copia',1,0,8)
-          }, 9)
+            ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
+          }, 1)
           .addCallback(function () {
             Player.playSoundFX('voz_de_rata_2_copia');
-            ANIM.fadeVolume('voz_de_rata_2_copia',1,0,8)
-          }, 12)  
+            ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
+          }, 4)  
 
            //Animacion de ratas:
           /////////////////////
@@ -996,13 +996,14 @@ let JSON_CUENTO = {
         preAnimacion6
           .addCallback(function () {
             Player.playSoundFX('flauta_solucion');
+            Player.cambiaVolume('flauta_solucion', 0.3);
           }, 0)
         ANIM.main_tl.add(preAnimacion6, '5_2+=6.1');
 
         /* Escena 07 */
         let preAnimacion7 = new TimelineMax();
         preAnimacion7
-          .from('#escena_06 .Estrella_esc06',2,{opacity:0.6, scaleX:0.7, scaleY:0.7, repeat:10})
+          .from('#escena_06 .Estrella_esc06',2,{opacity:0.3, scaleX:0.7, scaleY:0.7, repeat:10})
           .from('#escena_06 .buhoOjosEsc06', 3, {autoAlpha: 0,repeat:6,ease:Power2.easeOut},1)
         ANIM.main_tl.add(preAnimacion7, '6_0+=0');
 
@@ -1067,7 +1068,7 @@ let JSON_CUENTO = {
             Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.2);
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',1,0,2);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,2);
         }, "0_0_audio_fade");
         
         ANIM.main_tl.addLabel('3_0_audio', 'escena_3+=0.1');
@@ -1081,7 +1082,7 @@ let JSON_CUENTO = {
         }, "3_0_audio_fade");
 
         ANIM.main_tl.addLabel('7_0_audio', 'escena_7+=0.1');
-        ANIM.main_tl.addLabel('7_0_audio_fade', '7_1-=3');
+        ANIM.main_tl.addLabel('7_0_audio_fade', '7_0-=2');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_esc_08');
             Player.playSoundFX('copia_de_mercado');
@@ -1089,8 +1090,8 @@ let JSON_CUENTO = {
             Player.cambiaVolume('copia_de_mercado', 0.3);
         }, '7_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_esc_08',1,0,5);
-            ANIM.fadeVolume('copia_de_mercado',1,0,5);
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,2);
+            ANIM.fadeVolume('copia_de_mercado',0.6,0,2);
         }, "7_0_audio_fade");
  
         /*INICIO*/
