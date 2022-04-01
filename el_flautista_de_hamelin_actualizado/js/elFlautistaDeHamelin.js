@@ -97,6 +97,10 @@ let JSON_CUENTO = {
         url: 'audio/elFlautistaDeHamelin/fx/flautista_desilusionado.mp3',
       },
       {
+        nombre: 'frase_final',
+        url: 'audio/elFlautistaDeHamelin/fx/frase_final.mp3',
+      },
+      {
         nombre: 'musica_flauta_magica',
         url: 'audio/elFlautistaDeHamelin/fx/musica_flauta_magica.mp3',
       },
@@ -318,7 +322,7 @@ let JSON_CUENTO = {
             tiempo: [7.4, 12.0, 1.0]
           },
           {
-            texto: 'los niños por fin pudieron reunirse con sus familias en Hamelin.',
+            texto: 'Los niños por fin pudieron reunirse con sus familias en Hamelin.',
             tiempo: [13.0, 17.8, 1.0]
           },
           {
@@ -1003,7 +1007,7 @@ let JSON_CUENTO = {
         /* Escena 07 */
         let preAnimacion7 = new TimelineMax();
         preAnimacion7
-          .from('#escena_06 .Estrella_esc06',2,{opacity:0.3, scaleX:0.7, scaleY:0.7, repeat:10})
+          //.from('#escena_06 .Estrella_esc06',2,{opacity:0.3, scaleX:0.7, scaleY:0.7, repeat:10})
           .from('#escena_06 .buhoOjosEsc06', 3, {autoAlpha: 0,repeat:6,ease:Power2.easeOut},1)
         ANIM.main_tl.add(preAnimacion7, '6_0+=0');
 
@@ -1081,7 +1085,7 @@ let JSON_CUENTO = {
             ANIM.fadeVolume('flauta_solucion',1,0,2);
         }, "3_0_audio_fade");
 
-        ANIM.main_tl.addLabel('7_0_audio', 'escena_7+=0.1');
+        /* ANIM.main_tl.addLabel('7_0_audio', 'escena_7+=0.1');
         ANIM.main_tl.addLabel('7_0_audio_fade', '7_0-=2');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_esc_08');
@@ -1090,9 +1094,16 @@ let JSON_CUENTO = {
             Player.cambiaVolume('copia_de_mercado', 0.3);
         }, '7_0_audio');
         ANIM.main_tl.addCallback(function () {
-            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,2);
-            ANIM.fadeVolume('copia_de_mercado',0.6,0,2);
-        }, "7_0_audio_fade");
+            ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,10);
+            ANIM.fadeVolume('copia_de_mercado',0.6,0,10);
+        }, "7_0_audio_fade"); */
+
+        ANIM.main_tl.addCallback( function(){
+          Player.playSoundFX('copia_de_musica_flauta_magica_esc_08');
+          ANIM.fadeVolume('copia_de_musica_flauta_magica_esc_08',0.3,0,10);
+          Player.playSoundFX('copia_de_mercado');
+          ANIM.fadeVolume('copia_de_mercado',0.3,0,10);
+      } ,'escena_7+=0.01');
  
         /*INICIO*/
         /*LLAMADAS Y FUNCIONES ESCENA 0*/ //<-----------------------------------------------------
@@ -1809,7 +1820,10 @@ let JSON_CUENTO = {
           .from(ojosPuente,0.9,{autoAlpha:1, delay:1.0, immediateRender:false, repeat:17},0)
           .fromTo(abrazos1,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0)
           .fromTo(abrazos2,1.7,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:9}, 0.4)
-          .fromTo('#escena_07 .abrazo2Esc07',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:7}, 0.8)          
+          .fromTo('#escena_07 .abrazo2Esc07',2,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2), repeat:7}, 0.8)
+          .addCallback(function(){
+            Player.playSoundFX('frase_final');
+          },"+=0.1")          
           .addLabel('final');
          ANIM.anim_interact_reencuentro.pause();
     

@@ -3520,7 +3520,7 @@
 
 /************ESCE06***********/
 
-#escena_06 .Estrella_esc06{
+/* #escena_06 .Estrella_esc06{
     width: 30px;
     height: 30px;
     position: absolute;
@@ -3594,7 +3594,7 @@
 #escena_06 .estrella13Esc06{
     top: 8.3%;
     left: 93.5%;
-}
+} */
 
 #escena_06 .nota1Esc06{
     width: 40px;
