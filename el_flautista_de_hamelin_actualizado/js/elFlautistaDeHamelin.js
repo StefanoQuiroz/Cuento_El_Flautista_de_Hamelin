@@ -3,7 +3,7 @@ let JSON_CUENTO = {
     nombre: 'El flautista de Hamelin',
     tipo: 'Cuentos clásicos',
     descripcion:
-      '¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro.Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816.',
+      '¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro. Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816.',
     creditos: [
       ['Adaptación:', 'Copec'],
       ['Ilustraciones:', 'Copec'],
