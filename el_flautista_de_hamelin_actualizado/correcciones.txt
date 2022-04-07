@@ -66,3 +66,26 @@ Si es posible, que el colorín colorado suene algo después de terminada la narr
 La música debe quedar al final en loop infinito y que la interacción active las voces del pueblo solamente. ------> (CORREGIDO)
 
 Actualización de créditos en la portada (adjunto) ------> (CORREGIDO)
+
+
+####################################################################################################################
+NUEVAS CORRECCIONES
+####################################################################################################################
+
+PORTADA:
+- En el primer párrafo se repite la palabra día. Cambiar "hasta que un día aparece" por "hasta que de pronto aparece". ---->OK
+- La pregunta "¿Logrará el flautista deshacerse de las ratas y recibir su recompensa?" debe ir incluida en el primer párrafo.  ---->OK
+- En la última oración falta la palabra "en". Debe decir: "Este cuento es una adaptación basada en la leyenda popular...". ---->OK
+
+Escena 1:
+- El corte de la música antes de la narración está feo, demasiado abrupto. Debe ser paulatino con fade. ---->OK
+- Al final de la escena, que la música y el ruido de gentío tengan un volumen adecuado como para que se escuche el sonido de las ratas. Ahora no se percibe. ---->OK
+
+Escena 4:
+- Faltó aplicar esta instrucción: Que se escuchen chillidos de ratas en segundo plano detrás de la narración. ---->OK
+
+ Escena 8:
+- Faltaron aplicar estas instrucciones:
+- Cuando dice “Los niños pudieron”, esa “L” inicial debe ir con minúscula en los subtítulos. ---->OK
+- Si es posible, que el colorín colorado suene algo después de terminada la narración sobre la música y las voces del pueblo. (No es posible)
+- Agregar punto después de "este cuento se ha acabado." ---->OK

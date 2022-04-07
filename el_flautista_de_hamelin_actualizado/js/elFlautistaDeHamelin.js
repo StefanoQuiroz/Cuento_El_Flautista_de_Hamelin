@@ -1,9 +1,9 @@
 //archivo de configuración
 let JSON_CUENTO = {
     nombre: 'El flautista de Hamelin',
-    tipo: 'Cuento',
+    tipo: 'Cuentos clásicos',
     descripcion:
-      'Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que un día aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro. <br> ¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento es una adaptación basada la leyenda popular recogida por los hermanos Grimm en 1816.',
+      '¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro.Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816.',
     creditos: [
       ['Adaptación:', 'Copec'],
       ['Ilustraciones:', 'Copec'],
@@ -322,11 +322,11 @@ let JSON_CUENTO = {
             tiempo: [7.4, 12.0, 1.0]
           },
           {
-            texto: 'Los niños por fin pudieron reunirse con sus familias en Hamelin.',
+            texto: 'los niños por fin pudieron reunirse con sus familias en Hamelin.',
             tiempo: [13.0, 17.8, 1.0]
           },
           {
-            texto: 'Y colorín colorado este cuento se ha acabado',
+            texto: 'Y colorín colorado este cuento se ha acabado.',
             tiempo: [18.3, 22.2, 0.5]
           }
         ],
@@ -414,11 +414,6 @@ let JSON_CUENTO = {
         ANIM.creapartes();
           
         Player.creaMainTL();
-
-        let preAnimacion1 = new TimelineMax();
-        preAnimacion1
-          
-        ANIM.main_tl.add(preAnimacion1,'0_0-=0');
 
         let preAnimacion1_2 = new TimelineMax();
         preAnimacion1_2
@@ -626,6 +621,44 @@ let JSON_CUENTO = {
             .fromTo('#escena_02 .ratonTejadoNegroEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
             .fromTo('#escena_02 .ratonTejadoCafeEsc02',1,{backgroundPosition:'0% 0%'},{backgroundPosition:'200% 0%', ease: SteppedEase.config(2),repeat:-1},0)
         ANIM.main_tl.add(preAnimacion3_3, '2_2-=0');
+        
+        let preAnimacion4_0 = new TimelineMax();
+        preAnimacion4_0
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_1_copia');
+            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
+          }, 1)
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_2_copia');
+            //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
+          }, 4)  
+        ANIM.main_tl.add(preAnimacion4_0, '3_0-=3')
+
+        let preAnimacion4_1 = new TimelineMax();
+        preAnimacion4_1
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_1_copia');
+            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
+          }, 1)
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_2_copia');
+            //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
+          }, 4)  
+        ANIM.main_tl.add(preAnimacion4_1, '3_1-=3')
+        
+        let preAnimacion4_2 = new TimelineMax();
+        preAnimacion4_2
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_1_copia');
+            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
+          }, 1)
+          .addCallback(function () {
+            Player.playSoundFX('voz_de_rata_2_copia');
+            //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
+          }, 4)  
+        ANIM.main_tl.add(preAnimacion4_2, '3_2-=3')
+
+
 
         /* Escena 04 */
         var pathString = "M1105.416 483.219c90.371 184.09 201.866 229.89 246.672 65.601 34.111-29.756-221.296-440.778-545.576-351.442-214.214 36.82-127.189 164.007-180.743 428.427-46.859 384.915-328.015 334.709-455.204 6.694-56.9-50.206 73.636-207.519 43.513-331.369 13.388-133.883-163.211-274.744-351.057-118.178-47.656 13.678-168.151 83.966-488.673 331.356";
@@ -1065,7 +1098,7 @@ let JSON_CUENTO = {
         ANIM.main_tl.add(preAnimacion7_3, '6_3+=0');
 
               
-        ANIM.main_tl.addLabel('0_0_audio', 'escena_0+=0.1');
+       /*  ANIM.main_tl.addLabel('0_0_audio', 'escena_0+=0.1');
         ANIM.main_tl.addLabel('0_0_audio_fade', '0_0-=2');
         ANIM.main_tl.addCallback(function () {
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
@@ -1073,7 +1106,14 @@ let JSON_CUENTO = {
         }, '0_0_audio');
         ANIM.main_tl.addCallback(function () {
             ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,2);
-        }, "0_0_audio_fade");
+        }, "0_0_audio_fade"); */
+
+        
+        ANIM.main_tl.addCallback( function(){
+          Player.playSoundFX('copia_de_musica_flauta_magica_Esc01');
+          ANIM.fadeVolume('copia_de_musica_flauta_magica_Esc01',0.6,0,14);
+      } ,'escena_0+=0.01');
+
         
         ANIM.main_tl.addLabel('3_0_audio', 'escena_3+=0.1');
         ANIM.main_tl.addLabel('3_0_audio_fade', '3_0-=2');
@@ -1118,7 +1158,7 @@ let JSON_CUENTO = {
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
             Player.playSoundFX('copia_de_mercado',true);
-            Player.cambiaVolume('copia_de_mercado', 0.5);
+            Player.cambiaVolume('copia_de_mercado', 0.25);
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01',true);
             Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.1);  
             //ANIM.fadeVolume('musica_inicio',0.1,0.2,10);
@@ -1206,6 +1246,7 @@ let JSON_CUENTO = {
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
             Player.playSoundFX('copia_de_copia_de_musica_flauta_magica', true);
+            Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.3);
             //ANIM.fadeVolume('copia_de_copia_de_musica_flauta_magica',1,0,30);
         }, "fin_escena_6");
         
