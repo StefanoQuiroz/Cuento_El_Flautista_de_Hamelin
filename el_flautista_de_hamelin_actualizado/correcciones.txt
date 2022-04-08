@@ -89,3 +89,25 @@ Escena 4:
 - Cuando dice “Los niños pudieron”, esa “L” inicial debe ir con minúscula en los subtítulos. ---->OK
 - Si es posible, que el colorín colorado suene algo después de terminada la narración sobre la música y las voces del pueblo. (No es posible)
 - Agregar punto después de "este cuento se ha acabado." ---->OK
+
+####################################################################################################################
+NUEVAS CORRECCIONES
+####################################################################################################################
+
+- PORTADA: Al parecer no se entendió la instrucción del texto de la portada. Debe quedar así:
+
+
+Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro. ¿Logrará el flautista deshacerse de las ratas y recibir su recompensa?
+
+Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816. --->OK
+
+ESCENA 1:
+
+- Cuando finaliza la narración y se escucha la música y el ruido del gentío, aún no se escucha el sonido de las ratas. --->POR VER
+
+ESCENA 4: 
+- Si bien se agregó el ruido de las ratas mientras se escucha la narración, quedó un poco desagradable al oído, porque se repite muchas veces. Por favor que se escuche solo en algunas partes. Dos veces estaría bien. --->OK
+
+ESCENA 8:
+
+- Si es que no se puede colocar el "Colorín colorado" sobre la música, que al menos esté 2 segundos distanciado de la última oración del cuento. Ahora está muy pegado. --->OK

@@ -3,7 +3,7 @@ let JSON_CUENTO = {
     nombre: 'El flautista de Hamelin',
     tipo: 'Cuentos clásicos',
     descripcion:
-      '¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundudado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro. Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816.',
+      'Este cuento narra la historia de Hamelin, un próspero pueblo que se ve un día inundado de ratas. Todos los habitantes de Hamelin están desesperados, hasta que de pronto aparece un joven flautista que promete solucionar el problema a cambio de una bolsa con monedas de oro. ¿Logrará el flautista deshacerse de las ratas y recibir su recompensa? <br> Este cuento es una adaptación basada en la leyenda popular recogida por los hermanos Grimm en 1816.',
     creditos: [
       ['Adaptación:', 'Copec'],
       ['Ilustraciones:', 'Copec'],
@@ -327,7 +327,7 @@ let JSON_CUENTO = {
           },
           {
             texto: 'Y colorín colorado este cuento se ha acabado.',
-            tiempo: [18.3, 22.2, 0.5]
+            tiempo: [18.3, 22.2, 2]
           }
         ],
       },
@@ -625,37 +625,25 @@ let JSON_CUENTO = {
         let preAnimacion4_0 = new TimelineMax();
         preAnimacion4_0
           .addCallback(function () {
-            Player.playSoundFX('voz_de_rata_1_copia');
-            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
-          }, 1)
-          .addCallback(function () {
             Player.playSoundFX('voz_de_rata_2_copia');
             //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
-          }, 4)  
+          })  
         ANIM.main_tl.add(preAnimacion4_0, '3_0-=3')
 
         let preAnimacion4_1 = new TimelineMax();
         preAnimacion4_1
           .addCallback(function () {
-            Player.playSoundFX('voz_de_rata_1_copia');
-            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
-          }, 1)
-          .addCallback(function () {
             Player.playSoundFX('voz_de_rata_2_copia');
             //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
-          }, 4)  
+          })  
         ANIM.main_tl.add(preAnimacion4_1, '3_1-=3')
         
         let preAnimacion4_2 = new TimelineMax();
         preAnimacion4_2
           .addCallback(function () {
             Player.playSoundFX('voz_de_rata_1_copia');
-            //ANIM.fadeVolume('voz_de_rata_1_copia',1,0,29)
-          }, 1)
-          .addCallback(function () {
-            Player.playSoundFX('voz_de_rata_2_copia');
             //ANIM.fadeVolume('voz_de_rata_2_copia',1,0,29)
-          }, 4)  
+          })  
         ANIM.main_tl.add(preAnimacion4_2, '3_2-=3')
 
 
@@ -1158,7 +1146,7 @@ let JSON_CUENTO = {
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
             Player.playSoundFX('copia_de_mercado',true);
-            Player.cambiaVolume('copia_de_mercado', 0.25);
+            Player.cambiaVolume('copia_de_mercado', 0.2);
             Player.playSoundFX('copia_de_musica_flauta_magica_Esc01',true);
             Player.cambiaVolume('copia_de_musica_flauta_magica_Esc01', 0.1);  
             //ANIM.fadeVolume('musica_inicio',0.1,0.2,10);
@@ -1246,7 +1234,6 @@ let JSON_CUENTO = {
             Player.tooglePlayPauseIco();
             Player.resetSubtitulos();
             Player.playSoundFX('copia_de_copia_de_musica_flauta_magica', true);
-            Player.cambiaVolume('copia_de_copia_de_musica_flauta_magica', 0.3);
             //ANIM.fadeVolume('copia_de_copia_de_musica_flauta_magica',1,0,30);
         }, "fin_escena_6");
         
