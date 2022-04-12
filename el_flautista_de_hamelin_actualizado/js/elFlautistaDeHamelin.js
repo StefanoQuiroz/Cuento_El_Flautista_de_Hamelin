@@ -1788,10 +1788,10 @@ let JSON_CUENTO = {
         ANIM.anim_interact_portalCueva = new TimelineMax({repeat: 5}); // creo la interacción
         ANIM.anim_interact_portalCueva 
           .addLabel('inicio')
-          .to('#escena_06 .portalEsc06 #Capa_2_0',2,{ scale: 0.8, opacity: 1, ease: Power0.easeNone }, 0)
-          .to('#escena_06 .portalEsc06 #Capa_2_1',1.5,{ scale: 0.5, opacity: 1, ease: Power0.easeNone, delay: 0.5 }, 0)
-          .to('#escena_06 .portalEsc06 #Capa_2_2',1.5,{ scale: 0.3, opacity: 0.5, ease: Power0.easeNone, delay: 0.5 }, 0)
-          .to('#escena_06 .portalEsc06 #Capa_2_3',1.5,{ scale: 0.2, opacity: 0, ease: Power0.easeNone, delay: 0.5 }, 0)  
+          .to('#escena_06 .portalEsc06 #svg1',2,{ scale: 0.8, opacity: 1, ease: Power0.easeNone }, 0)
+          .to('#escena_06 .portalEsc06 #svg2',1.5,{ scale: 0.5, opacity: 1, ease: Power0.easeNone, delay: 0.5 }, 0)
+          .to('#escena_06 .portalEsc06 #svg3',1.5,{ scale: 0.3, opacity: 0.5, ease: Power0.easeNone, delay: 0.5 }, 0)
+          .to('#escena_06 .portalEsc06 #svg4',1.5,{ scale: 0.2, opacity: 0, ease: Power0.easeNone, delay: 0.5 }, 0)  
           .addLabel('final');
         ANIM.anim_interact_portalCueva.pause();
         

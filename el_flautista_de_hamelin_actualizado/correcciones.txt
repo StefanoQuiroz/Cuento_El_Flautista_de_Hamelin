@@ -103,10 +103,10 @@ Este cuento es una adaptación basada en la leyenda popular recogida por los her
 
 ESCENA 1:
 
-- Cuando finaliza la narración y se escucha la música y el ruido del gentío, aún no se escucha el sonido de las ratas. --->POR VER
+- Cuando finaliza la narración y se escucha la música y el ruido del gentío, aún no se escucha el sonido de las ratas.
 
 ESCENA 4: 
-- Si bien se agregó el ruido de las ratas mientras se escucha la narración, quedó un poco desagradable al oído, porque se repite muchas veces. Por favor que se escuche solo en algunas partes. Dos veces estaría bien. --->OK
+- Si bien se agregó el ruido de las ratas mientras se escucha la narración, quedó un poco desagradable al oído, porque se repite muchas veces. Por favor que se escuche solo en algunas partes. Dos veces estaría bien.
 
 ESCENA 8:
 
